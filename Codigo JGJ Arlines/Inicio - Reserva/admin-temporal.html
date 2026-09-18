@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Admin</title>
+</head>
+<body>
+    <form id="busqueda-form">
+        <input type="email" id="email-input" placeholder="Ingresa el correo">
+        <button type="submit" id="buscar">Buscar</button>
+    </form>
+
+    <!-- Información obtenida de la búsqueda por correo -->
+    <p id="info"></p>
+    <button id="editar" onclick="editarUsuario()">Editar</button>
+    <button id="eliminar" onclick="eliminarUsuario()">Eliminar</button>
+
+    <script src="../Js/admin.js"></script> <!-- Asegúrate de enlazar tu archivo JS -->
+</body>
+</html>

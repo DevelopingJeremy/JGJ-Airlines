@@ -1,0 +1,157 @@
+/** Ofertas */
+
+/* Estilos para el título de las ofertas */
+.titulo-Oferta {
+    font-size: 70px;
+    color: #fff;
+    margin: 30px;
+}
+
+/* Estilos para los enlaces dentro del recuadro de ofertas */
+.a-recuadro-oferta {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos para el recuadro de ofertas */
+#recuadro-oferta-completo {
+    border: 2px solid #1d2736;
+    width: 1300px;
+    border-radius: 20px;
+    background-color: #e6e6e6;
+    height: 204px;
+    margin-bottom: 60px;
+    transition-duration: 0.5s;
+}
+
+/* Estilos para las imágenes dentro del recuadro de ofertas */
+#recuadro-oferta-completo img {
+    height: 201px;
+    width: 320px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+}
+
+/* Estilos para el contenedor dentro del recuadro de ofertas */
+#recuadro-oferta-completo #container {
+    margin-left: 350px;
+    margin-top: 20px;
+}
+
+/* Estilos para el título del lugar en las ofertas */
+.titulo-lugar-oferta {
+    color: #212d41;
+}
+
+/* Estilos para la descripción dentro del recuadro de ofertas */
+.descripcion-oferta {
+    font-weight: 500;
+}
+
+/* Estilos para el precio nuevo dentro del recuadro de ofertas */
+.precio-total-oferta .precio-nuevo {
+    color: #0b5e12;
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+/* Estilos para el precio anterior dentro del recuadro de ofertas */
+.precio-total-oferta .precio-anterior {
+    color: red;
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+/* Estilos para el recuadro de ofertas al pasar el ratón sobre él */
+#recuadro-oferta-completo:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05) skew(2deg);
+    transition-duration: 0.5s;
+}
+
+/** Destinos */
+
+/* Estilos para el título de la sección de destinos */
+.titulo-Destinos {
+    font-size: 70px;
+    color: #fff;
+    margin: 30px;
+}
+
+/* Estilos para la barra de búsqueda de destinos */
+.barra-busqueda-destinos {
+    cursor: text;
+    width: 970px;
+    margin-bottom: 100px;
+    border-radius: 50px;
+}
+
+/* Estilos para la barra de búsqueda de destinos al recibir foco */
+.barra-busqueda-destinos:focus {
+    outline: none;
+}
+
+/* Estilos para el contenedor horizontal de destinos */
+#barra-horizontal-destinos {
+    display: block;
+    align-items: center;
+    float: left;
+    width: 1250px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background-image: url(../Multimedia/Imagenes/tabla_destinos.jpg); 
+    padding: 70px 25px 80px 55px;
+}
+
+/** Tarifas */
+
+/* Estilos para los recuadros de tarifas */
+#recuadros-tarifas {
+    border-radius: 20px;
+    background-color: #1d2736;
+    margin: 100px 0 100px 0;
+}
+
+/* Estilos para la información de tarifas */
+#informacion-tarifa {
+    width: 320px;
+    height: 850px;
+    float: left;
+    margin: 60px;
+    border-radius: 30px;
+    background-color: #e4e4e4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Transformación al pasar el mouse por encima */
+#informacion-tarifa:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0px 50px rgba(161, 161, 161, 0.9);
+    
+}
+
+/* Estilos para las imágenes dentro de la información de tarifas */
+#informacion-tarifa img {
+    height: 250px;
+    width: 100%;
+    border-top-right-radius: 28px;
+    border-top-left-radius: 28px;
+}
+
+/* Estilos para el título de las tarifas */
+.tarifa-titulo {
+    text-align: center;
+    margin-top: 20px;
+    color: #1d2736;
+}
+
+/* Estilos para el contenido dentro del recuadro de tarifas */
+#rellenado-tarifa {
+    padding: 20px;
+}
+
+/* Estilos para los párrafos dentro del recuadro de tarifas */
+#rellenado-tarifa p {
+    font-size: 17px;
+}

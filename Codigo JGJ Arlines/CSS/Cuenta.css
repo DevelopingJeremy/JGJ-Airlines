@@ -1,0 +1,516 @@
+/* Flecha retroceso */
+
+/* Div de las 3 flechas */
+.flecha-return-div {
+    position: relative;
+    cursor: pointer;
+    top: 60px;
+    left: 40px;
+}
+
+/* Flecha del medio */
+.flechaAcostada {
+    background-color: white;
+    width: 60px;
+    height: 12px;
+    position: absolute;
+    border-radius: 20px;
+    top: 9px;
+    left: 10px;
+}
+
+/* Flecha superior */
+.flechaArriba {
+    background-color: white;
+    width: 40px;
+    height: 12px;
+    position: absolute;
+    border-radius: 20px;
+    rotate: -40deg;
+}
+
+/* Flecha inferior */
+.flechaAbajo {
+    background-color: white;
+    width: 40px;
+    height: 12px;
+    position: absolute;
+    border-radius: 20px;
+    top: 18px;
+    rotate: 40deg;
+}
+
+/** Log in */
+
+/* Estilos del cuerpo de la página de inicio de sesión */
+.body-login {
+    background-color: #2A394F;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1100px;
+    justify-content: space-between;
+}
+
+/* Estilos para los enlaces en el cuerpo de la página de inicio de sesión */
+.body-login a {
+    color: #15A4F9;
+}
+
+/* Estilos para los enlaces al pasar el cursor en el cuerpo de la página de inicio de sesión */
+.body-login a:hover {
+    color: #FFFFFF;
+}
+
+/* Estilos del fieldset en la página de inicio de sesión */
+.fieldset-login {
+    border: 5px solid #FFFFFF;
+    border-radius: 20% 0%;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #273242;
+}
+
+/* Estilos para las imágenes dentro del fieldset */
+.fieldset-login img {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilos del contenedor de información */
+#informacion-login {
+    padding: 20px 20px;
+    align-content: center;
+    text-align: center;
+}
+
+/* Estilos para los inputs dentro del contenedor de información */
+#informacion-login input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 15px 5px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: #273242;
+    color: #FFFFFF;
+    cursor: text;
+    border-radius: 0;
+}
+
+/* Estilos para los inputs cuando están en foco dentro del contenedor de información */
+#informacion-login input:focus {
+    border-bottom: 4px solid #fff;
+    outline: none;
+}
+
+/* Estilos para los placeholders dentro de los inputs */
+#informacion-login ::placeholder {
+    color: #FFFFFF;
+}
+
+/* Estilos para el texto dentro del contenedor rellenado de información */
+#rellenado-login {
+    font-weight: bolder;
+}
+
+/* Estilos para los enlaces al pasar el cursor dentro del contenedor rellenado de información */
+#rellenado-login a:hover {
+    text-decoration: underline;
+    color: #cacaca;
+}
+
+/* Span de alerta */
+
+#texto-alternativo, #texto-alternativo2 {
+    color: red;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+/* Botón Cuenta */
+
+/* Estilos para el botón de cuenta */
+.button-cuenta {
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 30px;
+    font-size: 20px;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de cuenta al pasar el cursor */
+.button-cuenta:hover {
+    background: #fff;
+    color: #1AAB8A;
+}
+
+/* Estilos adicionales para el botón de cuenta */
+.button-cuenta:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+/* Estilos adicionales para el botón de cuenta al pasar el cursor */
+.button-cuenta:hover:before, .button-cuenta:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+/** Sign Up */
+
+/* Estilos del cuerpo */
+.body-signup {
+    background-color: #2A394F;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1100px;
+    justify-content: space-between;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos para los enlaces en el cuerpo */
+.body-signup a {
+    color: #15A4F9;
+}
+
+/* Estilos para los enlaces al pasar el cursor en el cuerpo */
+.body-signup a:hover {
+    text-decoration: underline;
+    color: #cacaca;
+}
+
+/* Estilos del fieldset */
+.fieldset-signup {
+    border: 5px solid #FFFFFF;
+    border-radius: 20% 0%;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #273242;
+}
+
+/* Estilos para las imágenes dentro del fieldset */
+.fieldset-signup img {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilos del contenedor de información */
+#informacion-signup {
+    padding: 20px 20px;
+    align-content: center;
+    text-align: center;
+}
+
+/* Estilos para los inputs dentro del contenedor de información */
+#informacion-signup input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 2px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: #273242;
+    color: #FFFFFF;
+    cursor: text;
+    border-radius: 0;
+}
+
+/* Estilos para los inputs tipo checkbox dentro del contenedor de información */
+#informacion-signup input[type=checkbox] {
+    cursor: pointer;
+}
+
+/* Estilos para los inputs cuando están en foco dentro del contenedor de información */
+#informacion-signup input:focus {
+    border-bottom: 4px solid #fff;
+    outline: none;
+}
+
+/* Estilos para los placeholders dentro de los inputs */
+#informacion-signup ::placeholder {
+    color: #FFFFFF;
+    font-style: italic bold;
+}
+
+/* Estilos para el texto dentro del contenedor rellenado de información */
+#rellenado-signup {
+    font-weight: bolder;
+}
+
+/* Estilos para los inputs tipo checkbox */
+input[type="checkbox"] {
+    transform: scale(0.8);
+    margin-right: 30px;
+}
+
+/** Recuperar contraseña */
+
+/* Estilos del cuerpo */
+.body-forgot {
+    background-color: #2A394F;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1100px;
+    justify-content: space-between;
+}
+
+/* Estilos para los enlaces en el cuerpo */
+.body-forgot a {
+    color: #15A4F9;
+}
+
+/* Estilos para los enlaces al pasar el cursor en el cuerpo */
+.body-forgot a:hover {
+    color: #FFFFFF;
+}
+
+/* Estilos del fieldset */
+.fieldset-forgot {
+    border: 5px solid #FFFFFF;
+    border-radius: 20% 0%;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #273242;
+}
+
+/* Estilos para las imágenes dentro del fieldset */
+.fieldset-forgot img {
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos del contenedor rellenado de información */
+#rellenado-forgot {
+    padding: 20px 20px;
+    align-content: center;
+    text-align: center;
+}
+
+/* Estilos del contenedor de información */
+#informacion-forgot {
+    text-align: center;
+}
+
+/* Estilos para el contenedor de radio buttons */
+#radio-forgot {
+    align-items: center;
+    display: block;
+    width: 250px;
+    margin-left: 24px;
+    padding: 5px;
+    border: 2px solid #b6b6b6;
+    border-radius: 5px;
+    background-color: #b6b6b6;
+    color: black;
+    font-weight: bold;
+}
+
+#radio-forgot input[type="radio"] {
+    width: 20px;
+}
+
+/* Estilos para los inputs dentro del contenedor rellenado de información */
+#rellenado-forgot input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 2px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: #273242;
+    color: #FFFFFF;
+    margin-left: 24px;
+    cursor: text;
+}
+
+/* Estilos para los inputs cuando están en foco dentro del contenedor rellenado de información */
+#rellenado-forgot input:focus {
+    border-bottom: 4px solid #fff;
+    outline: none;
+}
+
+/* Estilos para los placeholders dentro de los inputs */
+#rellenado-forgot ::placeholder {
+    color: #FFFFFF;
+}
+
+/* Estilos del contenedor de preguntas de seguridad */
+#pregunta-forgot {
+    align-items: center;
+    display: block;
+    width: 250px;
+    margin-left: 24px;
+    padding: 5px;
+    border: 2px solid #b6b6b6;
+    border-radius: 5px;
+    background-color: #b6b6b6;
+    color: black;
+    font-weight: bold;
+}
+
+/** Envío Exitoso */
+
+/* Estilos del cuerpo*/
+.body-enviado-exitoso {
+    background-color: #2A394F;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1100px;
+    justify-content: space-between;
+}
+
+/* Estilos para los enlaces en el cuerpo*/
+.body-enviado-exitoso a {
+    color: #15A4F9;
+}
+
+/* Estilos para los enlaces al pasar el cursor en el cuerpo*/
+.body-enviado-exitoso a:hover {
+    text-decoration: underline;
+    color: #cacaca;
+}
+
+/* Estilos del fieldset */
+.fieldset-enviado-exitoso {
+    border: 5px solid #FFFFFF;
+    border-radius: 20% 0%;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #273242;
+}
+
+/* Estilos para las imágenes dentro del fieldset */
+.fieldset-enviado-exitoso img {
+    margin-left: 6pc;
+    margin-bottom: 1pc;
+    height: 100px;
+}
+
+/** Cambio de Contraseña */
+
+/* Estilos del cuerpo */
+.body-cambio-contraseña {
+    background-color: #2A394F;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1100px;
+    justify-content: space-between;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos para los enlaces en el cuerpo */
+.body-cambio-contraseña a {
+    color: #15A4F9;
+}
+
+/* Estilos para los enlaces al pasar el cursor en el cuerpo */
+.body-cambio-contraseña a:hover {
+    text-decoration: underline;
+    color: #cacaca;
+}
+
+/* Estilos del fieldset */
+.fieldset-cambio-contraseña {
+    border: 5px solid #FFFFFF;
+    border-radius: 20% 0%;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #273242;
+}
+
+/* Estilos para las imágenes dentro del fieldset */
+.fieldset-cambio-contraseña img {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilos del contenedor de información */
+#informacion-cambio-contraseña {
+    padding: 20px 20px;
+    align-content: center;
+    text-align: center;
+}
+
+/* Estilos para los inputs dentro del contenedor rellenado de información */
+#relleno-cambio-contraseña input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 2px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: #273242;
+    color: #FFFFFF;
+    cursor: text;
+}
+
+/* Estilos para los inputs cuando están en foco dentro del contenedor rellenado de información */
+#relleno-cambio-contraseña input:focus {
+    border-bottom: 4px solid #fff;
+    outline: none;
+}
+
+/* Estilos para los placeholders dentro de los inputs */
+#relleno-cambio-contraseña ::placeholder {
+    color: #FFFFFF;
+    font-style: italic bold;
+    font-size: 10px;
+}
+
+/* Estilos para el texto dentro del contenedor rellenado de información */
+#relleno-cambio-contraseña {
+    font-weight: bolder;
+}
+
+.ocultarCuenta {
+    visibility: hidden;
+}

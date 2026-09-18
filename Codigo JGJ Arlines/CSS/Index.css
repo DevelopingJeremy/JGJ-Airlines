@@ -1,0 +1,267 @@
+/** Index */
+
+/* Contenido dentro del index sin footer ni header */
+#informacion-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3c4655;
+}
+
+/* Cuerpo de la página */
+.body-index {
+    background-color: #3c4655;
+}
+
+/* Fondo superior en la página de inicio */
+#cuadro-fondo-inicio-superior {
+    height: 270px;
+    position: absolute;
+    background-color: #c7eaff;
+    opacity: 0.7;
+}
+
+/* Contenedor de información de ofertas en la página de inicio */
+#informacion-oferta-inicio {
+    position: relative;
+    border-radius: 6px;
+    display: block;
+    height: 189px;
+    width: 261.5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las imágenes dentro de las ofertas de inicio */
+#informacion-oferta-inicio img {
+    height: 173px;
+    border-radius: 5px;
+}
+
+/* Contenedor de oferta específico en la página de inicio */
+#oferta-inicio {
+    position: absolute;
+    top: 128px;
+    border: 2px solid #e4e2e2;
+    border-radius: 0 0 5px 5px;
+    background-color: #e4e2e2;
+    display: block;
+    height: 60px;
+    width: 100%;
+    padding: 7px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Contenedor de destino específico en la página de inicio */
+#destino-inicio {
+    position: absolute;
+    top: 133px;
+    border: 2px solid #e4e2e2;
+    border-radius: 0 0 5px 5px;
+    background-color: #e4e2e2;
+    display: block;
+    height: 55px;
+    width: 100%;
+    padding: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Efecto hover para el contenedor de imagen y nombre en la página de inicio */
+#contenedor-imagen-nombre-inicio:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    
+    transform: scale(1.050);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+
+    border-radius: 6px;
+    }
+
+/* Estilo para las imágenes de ofertas en Cancún */
+#informacion-oferta-inicio-cancun img {
+    width: 100%;
+}
+
+#informacion-oferta-inicio img {
+    width: 100%;
+}
+
+/* Contenedor de información de ofertas en Cancún */
+#informacion-oferta-inicio-cancun {
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    display: block;
+    height: 189px;
+    width: 261.5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de imagen y nombre en la página de inicio */
+#contenedor-imagen-nombre-inicio {
+    float: left;
+    margin: 0 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo para los enlaces dentro del contenedor de imagen y nombre */
+#contenedor-imagen-nombre-inicio a {
+    color: black;
+}
+
+/* Barra horizontal para las ofertas en la página de inicio */
+#barra-horizontal-ofertas-inicio {
+    float: left;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    background-image: url(../Multimedia/Imagenes/landscape-image.jpg);
+    background-repeat: none;
+    padding: 50px 50px 80px 55px;
+}
+
+/* Estilo para los enlaces dentro de la barra horizontal de ofertas */
+#barra-horizontal-ofertas-inicio a {
+    text-decoration: none;
+}
+
+/* Barra horizontal de ayuda en la página de inicio */
+#barra-horizontal-ayuda-inicio {
+    margin: 30px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+}
+
+/* Estilo para los enlaces dentro de la barra horizontal de destinos */
+#barra-horizontal-destinos-inicio a {
+    text-decoration: none;
+}
+
+/* Barra horizontal para los destinos en la página de inicio */
+#barra-horizontal-destinos-inicio {
+    display: block;
+    align-items: center;
+    float: left;
+    width: 1250px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background-image: url(../Multimedia/Imagenes/Hombre\ con\ boleta.jpg);
+    padding: 70px 25px 80px 55px;
+}
+
+/* Título de grupos de imágenes en la página de inicio */
+.titulo-grupos-imagenes-inicio {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    width: 167px;
+    margin-bottom: 20px;
+}
+
+/* Título para grupos de imágenes de ofertas */
+.titulo-grupos-imagenes-inicio-ofertas {
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    width: 167px;
+}
+
+/* Título para grupos de imágenes de destinos */
+.titulo-grupos-imagenes-inicio-destinos {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    width: 167px;
+    margin-bottom: 20px;
+}
+
+/* Título de la barra de ayuda en la página de inicio */
+.titulo-ayuda-barra-inicio {
+    color: #fff;
+    padding: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* ! Estilos Carrito */
+
+.carrito-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.eliminar-carrito {
+    display: none;
+}
+
+.tiquete {
+    width: 900px; /* Ancho aumentado */
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.alerta-vacio {
+    text-align: center;
+    margin: 50px auto 100px auto;
+
+    width: 900px; /* Ancho aumentado */
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tiquete-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tiquete-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.btn-borrar {
+    padding: 10px 15px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-borrar:active {
+    background-color: #f54343;
+}
+
+
+
+.tiquete-encabezados {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tiquete-titulo {
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+}
+
+.tiquete-valores {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tiquete-id, .tiquete-origen, .tiquete-destino, .tiquete-fecha-ida, .tiquete-fecha-regreso, .tiquete-pasajeros, .tiquete-tipo-pasajeros, .tiquete-asientos, .tiquete-total-value {
+    width: 100px;
+    text-align: center;
+}
+

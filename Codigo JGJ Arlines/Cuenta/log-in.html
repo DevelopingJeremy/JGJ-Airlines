@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/JGJ-Airlines-styles.css" type="text/css"> <!-- Css Global -->
+    <link rel="stylesheet" href="../CSS/Cuenta.css"> <!-- Css Cuenta -->
+    <link rel="icon" type="image/png" href="../Multimedia/Iconos/Plane_icon.png">
+    <title>Iniciar sesión | JGJ Airlines</title>
+</head>
+
+<body class="body-login">
+
+    <!-- Flecha retroceso -->
+    <div id="boton-retroceso">
+        <div class="flecha-return-div">
+            <div class="flechaAcostada"></div>
+            <div class="flechaArriba"></div>
+            <div class="flechaAbajo"></div>
+        </div>
+    </div>
+
+<div id="log-in">
+        <form action="" method="get" id="form-login">
+            <fieldset class="fieldset-login">
+                <div id="informacion-login">
+                    <!--Logo de JGJ Airlines-->
+                    <img src="../Multimedia/Iconos/Plane_icon_2.png" alt="JGJ Airlines Logo" width="50px"><br>
+    
+                    <!-- Titulo Iniciar Sesion -->
+                    <h1>Iniciar sesión</h1><br>
+    
+                    <!-- Correo Electronico -->
+                    <div id="rellenado-login">
+                        <label for="login_correo">Correo electronico</label><br>
+                        <input type="email" id="login_correo" placeholder="Correo electronico" size="25"
+                            onfocus="blanquear(this)" onblur="verifyEmail(this)">
+                        <br> <span id="texto-alternativo"></span>
+                        <br><br>
+    
+                        <!--Inicio de sesion de contraseña-->
+                        <label for="login_contrasena">Contraseña</label><br>
+                        <input type="password" id="login_contrasena" placeholder="Contraseña" name="login_contrasena"
+                            onfocus="blanquear(this)" onblur="verifyPassword(this)">
+                        <br> <span id="texto-alternativo2"></span><br><br>
+    
+                        <!--Inicio de sesión submit, opción de registro y backup de contraseña-->
+                        <button type="submit" class="button-cuenta">Iniciar Sesión</button><br><br>
+                        <p><a href="recuperar-contraseña.html">¿Olvidaste tu contraseña?</a></p><br>
+                        <p>¿No tienes una cuenta?<a href="sign-up.html" target="_self"> Registrate</a></p>
+                    </div><!--Inicio de sesion de correo electronico-->
+    
+                </div>
+            </fieldset>
+        </form>
+</div>
+
+<div id="log-out">
+    <form action="" method="get" id="form-logout">
+        <fieldset class="fieldset-login">
+            <div id="informacion-login">
+                <!--Logo de JGJ Airlines-->
+                <img src="../Multimedia/Iconos/Plane_icon_2.png" alt="JGJ Airlines Logo" width="50px"><br>
+    
+                <!-- Titulo Iniciar Sesion -->
+                <h1>Cerrar Sesión</h1><br>
+    
+                <!-- Correo Electronico -->
+                <div id="rellenado-login">
+                    <h2>Hola <span id="nombre-usuario"></span></h2><br><br>
+    
+                    <!--Inicio de sesión submit, opción de registro y backup de contraseña-->
+                    <button type="submit" id="button-cuenta" class="button-cuenta">Cerrar Sesión</button><br><br>
+                </div><!--Inicio de sesion de correo electronico-->
+    
+                <script>
+    
+                    // Cambiar estado del registro
+                    const boton = document.querySelector('#button-cuenta').addEventListener('click', function (event) {
+                        event.preventDefault()
+                        localStorage.setItem('clientId', undefined);
+                        localStorage.setItem('userName', undefined);
+                        window.location.pathname = 'Inicio%20-%20Reserva/index.html'
+                    })
+    
+                    const userText = document.getElementById('nombre-usuario')
+    
+                    userText.innerText = localStorage.getItem('userName')
+    
+                    // Boton retroceso
+                    document.getElementById('boton-retroceso').addEventListener('click', function () {
+                        window.history.back(1);
+                    })
+                </script>
+            </div>
+        </fieldset>
+    </form>
+</div>
+    <script src="../Js/Cuenta_JS/Log-in.js"></script>
+    <script src="../Js/Estado-Cuenta.js"></script>
+</body>
+
+</html>

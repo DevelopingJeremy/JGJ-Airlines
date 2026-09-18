@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/JGJ-Airlines-styles.css" type="text/css"> <!-- Css Global -->
+    <link rel="stylesheet" href="../CSS/Cuenta.css"> <!-- Css Cuenta -->
+    <link rel="icon" type="image/png" href="../Multimedia/Iconos/Plane_icon.png">
+    <title>Recuperar contraseña | JGJ Airlines</title>
+    <script src="recuperar-contraseña.js" defer></script>
+</head>
+<!-- codigo de el olvido de contraseña -->
+
+<body class="body-forgot">
+
+    <!-- Flecha retroceso -->
+    <div id="boton-retroceso">
+        <div class="flecha-return-div">
+            <div class="flechaAcostada"></div>
+            <div class="flechaArriba"></div>
+            <div class="flechaAbajo"></div>
+        </div>
+    </div>
+
+    <form action="" method="post" id="forgot-form">
+        <fieldset class="fieldset-forgot">
+            <div id="informacion-forgot">
+                <!--Logo de JGJ Airlines-->
+                <img src="../Multimedia/Iconos/Plane_icon_2.png" alt="JGJ Airlines Logo" width="50px"><br><br>
+                <h1>¿Olvidaste tu contraseña?</h1><br>
+                <h2>¿Cómo la deseas recuperar?</h2><br>
+            </div>
+            <!--Codigo funcional de la recuperación de la contraseña -->
+            <div id="radio-forgot">
+                <input type="radio" name="seleccion-recuperacion-contraseña" id="email-radio" value="1"
+                    onclick="showEmail()"> Correo electrónico <br>
+                <input type="radio" name="seleccion-recuperacion-contraseña" id="sms-radio" value="2"
+                    onclick="showSMS()"> Mensaje de texto (SMS)
+            </div>
+
+            <!-- Elegir como cambiar la contraseña -->
+            <div id="rellenado-forgot">
+                <p id="enviar-instrucciones">Selecciona una opción arriba</p><br>
+                <input type="email" id="email-input" placeholder="Email" size="30" style="display: none;" required>
+                <input type="number" id="sms-input" placeholder="Número de telefono" size="30" style="display: none;"
+                    required><br>
+                <button type="button" class="button-cuenta" onclick="submitFormAndRedirect()">Enviar</button><br><br>
+
+                <!-- Botón Iniciar Sesión -->
+                <p>Volver a <a href="log-in.html">Iniciar Sesión</a></p>
+            </div>
+        </fieldset>
+    </form>
+
+    <!-- Scripts -->
+    <script src="../Js/Cuenta_JS/Log-in.js"></script>
+    <script src="../Js/Cuenta_JS/Recuperacion-contraseña.js"></script>
+</body>
+
+</html>

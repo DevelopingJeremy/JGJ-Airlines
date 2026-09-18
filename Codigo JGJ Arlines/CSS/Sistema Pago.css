@@ -1,0 +1,226 @@
+/** Escoger Tarifa para el pago */
+
+/* Cuerpo */
+#cuerpo-tarifa-pago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Información del pago */
+#informacion-tarifa-pago {
+    border-radius: 35px;
+    background-color: #273242;
+    width: 1500px;
+    margin-top: 110px;
+    margin-bottom: 110px;
+    align-items: center;
+}
+
+/* Estilos para los inputs tipo texto */
+#informacion-tarifa-pago input[type="text"] {
+    width: 200px;
+    height: 40px;
+    float: left;
+    margin: 60px 60px 0 0;
+    padding: 25px;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+/* Cursor al sobrepasar los inputs */
+#informacion-tarifa-pago input[type="text"]:hover {
+    cursor: default;
+}
+
+/* Al estar usando el input tipo texto */
+#informacion-tarifa-pago input[type="text"]:focus {
+    border: none;
+    border-bottom: 2px solid #303d50;
+    outline: none;
+}
+
+/* Alinear tarifas en el centro */
+#informacion-reserva-seleccionada {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Al sobrepasar la informacion de la reserva */
+#informacion-reserva-seleccionada:hover {
+    cursor: default;
+}
+
+/* Acomodar tarifas */
+#tarifas-pago {
+    display: flex;
+    padding: 5%;
+}
+
+/* Espacio entre el boton y el borde */
+#procesado-tarifa .boton-continuar-tarifa-pago{
+    margin-left: 39%;
+}
+
+/* Boton */
+#procesado-tarifa button {
+    width: 300px;
+    height: 65px;
+    border-radius: 30px;
+    background-color: #1AAB8A;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5pc;
+    transition-duration: 0.4s;
+    margin-bottom: 70px;
+}
+
+/* Al sobrepasar botón */
+#procesado-tarifa button:hover {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: #1AAB8A;
+}
+
+/* Cursor para las tarifas */
+#tarifas-pago #informacion-tarifa {
+    cursor: default;
+}
+
+/** Escoger Asientos */
+
+/* Encapsula todo */
+.contenedor-seleccion {
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    width: 400px;
+    margin: 70px auto ;
+    background-color: #273242;
+}
+
+/* Subtitulos y titulos */
+.contenedor-seleccion h1, label{
+    color: white;
+}
+
+/* Estilos de cada asiento */
+.asiento {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+/* Asiento seleccionado */
+.asiento.seleccionado {
+    background-color: lightgreen;
+}
+
+/* Cada fila */
+.fila {
+    display: flex;
+    justify-content: center;
+}
+
+/* Encapsulador de las filas */
+.fila-container {
+    margin-bottom: 20px;
+}
+
+/* Esconder asientos */
+.hidden {
+    display: none;
+}
+
+/* Botón continuar */
+.contenedor-seleccion button {
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #1AAB8A;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    margin-left: 127px;
+}
+
+/* Al sobrepasar el boton */
+.contenedor-seleccion button:hover {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: #1AAB8A;
+}
+
+/** Proceso pago */
+
+/* Encapsula todo */
+.container-proceso-facturacion {
+    width: 390px;
+    margin: 100px auto;
+    background-color: #273242;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.container-proceso-facturacion h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Sub Titulos */
+.container-proceso-facturacion label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+/* Input tipo texto */
+.container-proceso-facturacion input[type="text"], .container-proceso-facturacion input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Al sobrepasar el mouse */
+.container-proceso-facturacion input:hover {
+    cursor: text;
+}
+
+
+/* Botón */
+.container-proceso-facturacion button {
+    width: 95%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos al usar el boton */
+.container-proceso-facturacion button:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor del email */
+.container-proceso-facturacion input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

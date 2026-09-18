@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Ayuda | JGJ Airlines</title>
+    <link rel="stylesheet" href="../CSS/JGJ-Airlines-styles.css" type="text/css"> <!-- CSS Global -->
+    <link rel="stylesheet" href="../CSS/Sobre nosotros, ayuda.css"> <!-- CSS Sobre nosotros, Ayuda -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../Js/bootstrap.js"></script>
+    <script src="../Js/JGJ-Airlines-JS.js"></script>
+    <link rel="icon" type="image/png" href="../Multimedia/Iconos/Plane_icon.png">
+
+</head>
+
+<body class="body-index">
+    <!-- Header de la página -->
+    <header>
+        <div id="back">
+            <div class="menu container">
+
+                <!-- Logo -->
+                <a href="../Inicio - Reserva/index.html" class="logo"><img src="../Multimedia/Logo/Letras verde claro, Logo JGJ.png"
+                        alt="Logo JGJ-Airlines Letras verde claro" style="height: 50px;"></a>
+                <input type="checkbox" id="menu">
+
+                <!-- Icono del menú interactivo -->
+                <label for="menu">
+                    <img src="../Multimedia/Iconos/Menu_Icon.png" class="menu-icono" alt="">
+                </label>
+
+                <!-- Lista interactiva del header -->
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../Inicio - Reserva/index.html">Reserva</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/ofertas.html">Ofertas</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/destinos.html">Destinos</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/tarifas.html">Tarifas</a></li>
+                        <li><a href="../Inicio - Reserva/carrito.html">Tiquetes</a></li>
+                        <li><a href="../Cuenta/log-in.html"><img src="../Multimedia/Iconos/User_icon.png" alt=""
+                                    style="height: 25px;"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="h1-text-background">
+        <div class="div-h1info-centro-de-ayuda"></div>
+        <h1 class="h1-bienvenida-centro-de-ayuda">Centro de Ayuda</h1>
+        <p class="parrafo-bienvenida-centro-de-ayuda">
+            En Aviación, tu viaje es nuestra máxima prioridad. Nuestro equipo de expertos está aquí para brindarte el soporte y la asistencia que necesitas en cada paso de tu viaje. Ya sea que estés buscando información sobre vuelos, necesites ayuda con reservas o tengas consultas sobre regulaciones de aviación, estamos aquí para ayudarte.
+            Confía en nosotros para proporcionarte respuestas claras, soluciones efectivas y orientación confiable. Nuestro compromiso es garantizar que tengas una experiencia de viaje segura, cómoda y sin contratiempos.
+            <b>¡Gracias por elegir JGJ Airlines!</b> Estamos encantados de ser parte de tu aventura en los cielos.
+        </p>
+        </div> 
+        
+        <!-- Botones de Ayuda-->
+        <div class="container-del-centro-de-ayuda">
+            <div class="caja-del-centro-de-ayuda">
+                <h2 class="titulo-caja">Manual de Usuario</h2>
+                <p class="descripcion-caja">¿Tienes alguna duda de como utilizar nuestra plataforma? Accede a nuestro manual para atender tus dudas</p>
+                <a href="../../Documentación/Manual de Usuario JGJ Airlines.pdf" download="Manual de Usuario JGJ Airlines" class="boton-caja">Manual de Usuario</a>
+            </div>
+            <div class="caja-del-centro-de-ayuda">
+                <h2 class="titulo-caja">Terminos y Condiciones</h2>
+                <p class="descripcion-caja">Es necesario que tengas conocimiento de nuestras políticas y condiciones de uso de la plataforma
+                    para evitar problemas a futuro.
+                </p>
+                <a href="../../Documentación/Términos y Condiciones de JGJ Airlines.pdf" download="Términos y Condiciones de JGJ Airlines" class="boton-caja">Terminos y Condiciones</a>
+            </div>
+            <div class="caja-del-centro-de-ayuda">
+                <h2 class="titulo-caja">Sobre Nosotros</h2>
+                <p class="descripcion-caja">Antes de buscar ayuda, informate de quienes somos para que tengas una visión clara que lo que buscas
+                    es lo que te brindaremos.
+                </p>
+                <a href="sobre-nosotros.html" class="boton-caja" target="_blank">Sobre Nosotros</a>
+            </div>
+        </div>
+
+        <!--Codigo nuevo-->
+        <article>
+            <section>
+                <div class="faq-container">
+                    <div id="faq-titulo-div-border">
+                        <h1 id="h1-faq-titulo">FAQ</h1>
+                    </div>
+                    <div class="faq-content">
+
+                        <!--Para agregar preguntas se copia el div de faq-question y se cambian los datos. 
+                        Para aumentar el tamaño del fodo blanco se le cambia el height (comentado) del font-content en caso de ser necesario.-->
+                        <div class="faq-question">
+                            <h3>¿Es seguro, porque elegir JGJ Airlines?</h3>
+                            <button class="faq-button">Mostrar Respuesta</button>
+                            <div class="faq-answer">
+                                <p>Nos distinguimos por nuestro compromiso con la seguridad, la comodidad y la satisfacción del cliente. Nuestro equipo está formado por expertos en aviación que se esfuerzan por brindar una experiencia de viaje excepcional a nuestros pasajeros.</p>
+                            </div>
+                            <div class="faq-line"></div>
+                        </div>
+                        <div class="faq-question">
+                            <h3>¿Y la información de vuelos?</h3>
+                            <button class="faq-button">Mostrar Respuesta</button>
+                            <div class="faq-answer">
+                                <p>Puedes encontrar información detallada sobre las tarifas de los vuelos en <a href="../Ofertas, Destinos, Tarifas/tarifas.html"> tarifas</a>, donde podrás comparar precios, consultar promociones vigentes y reservar tu vuelo al mejor precio disponible.</p>
+                            </div>
+                            <div class="faq-line"></div>
+                        </div>
+                        <div class="faq-question">
+                            <h3>¿Y los destinos de aviación?</h3>
+                            <button class="faq-button">Mostrar Respuesta</button>
+                            <div class="faq-answer">
+                                <p>Puedes explorar nuestros destinos disponibles en nuestra página web y planificar tu próximo viaje con nosotros.</p>
+                            </div>
+                            <div class="faq-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        
+        <script>
+            const faqButtons = document.querySelectorAll('.faq-button');
+
+            faqButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const answer = button.nextElementSibling;
+                    answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+                    button.textContent = (button.textContent === 'Mostrar Respuesta') ? 'Ocultar Respuesta' : 'Mostrar Respuesta';
+                });
+            });
+        </script>
+    </main>
+
+    <!--CAMBIAR FOOTER-->
+    <div id="footer-inicio">
+        <footer>
+            <!-- Links hacia las redes sociales -->
+            <a href=""><img src="../Multimedia/Iconos/Instragram_white_icon.png" alt="Instragram_icon-inicio"></a>
+            <a href=""><img src="../Multimedia/Iconos/Facebook_white_icon.png" alt="Facebook_icon-inicio"></a>
+            <a href=""><img src="../Multimedia/Iconos/Twitter_white_icon.png" alt="Twitter_icon-inicio"></a>
+
+            <!-- Links hacia otras partes de la página -->
+            <a href="../Sobre nosotros - Centro Ayuda/sobre-nosotros.html">Sobre nosotros</a>
+            <a href="../Sobre nosotros - Centro Ayuda/centro-ayuda.html">Centro de ayuda</a>
+            <a href="../../Documentación/Términos y Condiciones de JGJ Airlines.pdf" download="Términos y Condiciones de JGJ Airlines">Terminos y Condiciones</a>
+        </footer>
+</body>
+
+</html>

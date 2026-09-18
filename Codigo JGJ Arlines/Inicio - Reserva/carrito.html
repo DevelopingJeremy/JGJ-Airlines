@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/JGJ-Airlines-styles.css">
+    <title>Carrito | JGJ Airlines</title>
+    <link rel="icon" type="image/png" href="../Multimedia/Iconos/Plane_icon.png">
+</head>
+
+<body class="body-index">
+    <header>
+        <div id="back">
+            <div class="menu container">
+                <!-- Logo -->
+                <a href="index.html" class="logo"><img src="../Multimedia/Logo/Letras verde claro, Logo JGJ.png"
+                        alt="Logo JGJ-Airlines Letras verde claro" style="height: 50px;"></a>
+                <input type="checkbox" id="menu">
+
+                <!-- Icono del menú interactivo -->
+                <label for="menu">
+                    <img src="../Multimedia/Iconos/Menu_Icon.png" class="menu-icono" alt="">
+                </label>
+
+                <!-- Lista interactiva del header -->
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../Inicio - Reserva/index.html">Reserva</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/ofertas.html">Ofertas</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/destinos.html">Destinos</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/tarifas.html">Tarifas</a></li>
+                        <li><a href="../Inicio - Reserva/carrito.html">Tiquetes</a></li>
+                        <li><a href="../Cuenta/log-in.html"><img src="../Multimedia/Iconos/User_icon.png" alt=""
+                                    style="height: 25px;"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de reservación de vuelos interactiva -->
+    <div id="barra-reservacion-vuelo">
+
+        <!-- Título de la Barra de Reservación -->
+        <div id="encabezado-reservacion-vuelo">
+            <h1>¡Reservá ahora!</h1>
+        </div>
+
+        <!-- Caja Información de la barra interactiva -->
+        <div id="informacion-reservacion-vuelo">
+
+            <!-- Opciones de rellenado de información de la barra -->
+            <div id="rellenado-reservacion-vuelo">
+                <nav class="rellenado-vuelo-navbar">
+                    <form action="" method="post" id="selecciones-informacion-barra-reservacion">
+
+                        <div id="titulos-reservacion">
+                            <h1 class="origen-reserva">Origen</h1>
+                            <h1 class="destino-reserva">Destino</h1>
+                            <h1 class="ida-reserva">Ida</h1>
+                            <h1 class="vuelta-reserva">Vuelta</h1>
+                            <h1 class="pasajeros-reserva">Pasajeros</h1>
+                        </div>
+
+                        <!-- Escoger Origen del vuelo -->
+                        <select name="Origen" id="origen-reservacion-vuelo">
+                            <option value="0">Origen</option>
+                            <option value="1">Alajuela, Costa Rica</option>
+                            <option value="2">Guanacaste, Costa Rica</option>
+                            <option value="3">Amsterdam, Países Bajos</option>
+                            <option value="4">Banff National Park, Canadá</option>
+                            <option value="5">Barcelona, España</option>
+                            <option value="6">Bora Bora, Polinesia Francesa</option>
+                            <option value="7">Cancún, México</option>
+                            <option value="8">Cinque Terre, Italia</option>
+                            <option value="9">Ciudad de México, México</option>
+                            <option value="10">Costa Amalfitana</option>
+                            <option value="11">Fiordos Noruegos, Noruega</option>
+                            <option value="12">Islas Galápagos, Ecuador</option>
+                            <option value="13">Islas Lofoten, Noruega</option>
+                            <option value="14">Kyoto, Japón</option>
+                            <option value="15">Madrid, España</option>
+                            <option value="16">New York, EEUU</option>
+                            <option value="17">París, Francia</option>
+                            <option value="18">Sidney, Australia</option>
+                        </select>
+
+                        <!-- Escoger Destino del vuelo -->
+                        <select name="Destino" id="destino-reservacion-vuelo">
+                            <option value="0">Destino</option>
+                            <option value="1">Alajuela, Costa Rica</option>
+                            <option value="2">Guanacaste, Costa Rica</option>
+                            <option value="3">Amsterdam, Países Bajos</option>
+                            <option value="4">Banff National Park, Canadá</option>
+                            <option value="5">Barcelona, España</option>
+                            <option value="6">Bora Bora, Polinesia Francesa</option>
+                            <option value="7">Cancún, México</option>
+                            <option value="8">Cinque Terre, Italia</option>
+                            <option value="9">Ciudad de México, México</option>
+                            <option value="10">Costa Amalfitana</option>
+                            <option value="11">Fiordos Noruegos, Noruega</option>
+                            <option value="12">Islas Galápagos, Ecuador</option>
+                            <option value="13">Islas Lofoten, Noruega</option>
+                            <option value="14">Kyoto, Japón</option>
+                            <option value="15">Madrid, España</option>
+                            <option value="16">New York, EEUU</option>
+                            <option value="17">París, Francia</option>
+                            <option value="18">Sidney, Australia</option>
+                        </select>
+                        
+                        <!-- Escoger Fecha de ida del vuelo -->
+                        <input type="date" id="fecha-id-reservacion-vuelo" placeholder="Ida">
+
+                        <!-- Escoger Fecha de vuelta del vuelo -->
+                        <input type="date" id="fecha-vuelta-reservacion-vuelo">
+
+                        <!-- Escoger Número de pasajeros del vuelo -->
+                        <!-- Escoger Destino del vuelo -->
+                        <select name="Pasajeros" id="numero-pasajeros-">
+                            <option value="0"># Pasajeros</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+
+                        <!-- Botón de envío para realizar la búsqueda de la información del vuelo -->
+                        <button type="submit" class="enviar-reservacion-vuelo" id="continuar-btn">Continuar</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div id="tiquetes-containers">
+        <!-- Script de los tiquetes creados -->
+        <!-- En caso de no haber tiquetes mensaje de alerta -->
+
+    </div>
+
+
+
+    <!-- Footer de la página -->
+    <div id="footer-inicio">
+        <footer>
+            <!-- Links hacia las redes sociales -->
+            <a href=""><img src="../Multimedia/Iconos/Instragram_white_icon.png" alt="Instragram_icon-inicio"></a>
+            <a href=""><img src="../Multimedia/Iconos/Facebook_white_icon.png" alt="Facebook_icon-inicio"></a>
+            <a href=""><img src="../Multimedia/Iconos/Twitter_white_icon.png" alt="Twitter_icon-inicio"></a>
+
+            <!-- Links hacia otras partes de la página -->
+            <a href="../Sobre nosotros - Centro Ayuda/sobre-nosotros.html">Sobre nosotros</a>
+            <a href="../Sobre nosotros - Centro Ayuda/centro-ayuda.html">Centro de ayuda</a>
+            <a href="../../Documentación/Términos y Condiciones de JGJ Airlines.pdf"
+                download="Términos y Condiciones de JGJ Airlines">Terminos y Condiciones</a>
+        </footer>
+    </div>
+    </div>
+
+    <!-- Script -->
+    <script src="../Js/Carrito.js"></script>
+    <script src="../Js/Barra-Reservacion.js"></script>
+</body>
+
+</html>

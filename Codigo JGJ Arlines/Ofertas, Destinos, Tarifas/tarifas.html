@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifas | JGJ Airlines</title>
+    <link rel="stylesheet" href="../CSS/JGJ-Airlines-styles.css" type="text/css"> <!-- CSS Global -->
+    <link rel="stylesheet" href="../CSS/Todos_Destinos.css"> <!-- CSS De todos los destinos -->
+    <link rel="stylesheet" href="../CSS/Dest, Ofer, Tari.css"> <!-- Tarifas, Destinos, Ofertas -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../Js/bootstrap.js"></script>
+    <link rel="icon" type="image/png" href="../../Multimedia/Iconos/Plane_icon.png">
+</head>
+
+<body class="body-destino-completo">
+    <!--header de la página-->
+    <header>
+        <div id="back">
+            <div class="menu container">
+                <!-- Logo -->
+                <a href="../Inicio - Reserva/index.html" class="logo"><img src="../Multimedia/Logo/Letras verde claro, Logo JGJ.png"
+                    alt="Logo JGJ-Airlines Letras verde claro" style="height: 50px;"></a>
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="../Multimedia/Iconos/Menu_Icon.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../Inicio - Reserva/index.html">Reserva</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/ofertas.html">Ofertas</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/destinos.html">Destinos</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/tarifas.html">Tarifas</a></li>
+                        <li><a href="../Inicio - Reserva/carrito.html">Tiquetes</a></li>
+                        <li><a href="../Cuenta/log-in.html"><img src="../Multimedia/Iconos/User_icon.png" alt=""
+                                    style="height: 25px;"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="cuerpo-destino-completo">
+
+        <!-- Barra de reservación de vuelos interactiva -->
+        <div id="barra-reservacion-vuelo">
+
+            <!-- Título de la Barra de Reservación -->
+            <div id="encabezado-reservacion-vuelo">
+                <h1>¡Reservá ahora!</h1>
+            </div>
+
+            <!-- Caja Información de la barra interactiva -->
+            <div id="informacion-reservacion-vuelo">
+
+                <!-- Opciones de rellenado de información de la barra -->
+                <div id="rellenado-reservacion-vuelo">
+                    <nav class="rellenado-vuelo-navbar">
+                        <form action="" method="post" id="selecciones-informacion-barra-reservacion">
+
+                           <!-- Escoger Origen del vuelo -->
+                           <select name="Origen" id="origen-reservacion-vuelo">
+                            <option value="0">Origen</option>
+                            <option value="1">Alajuela, Costa Rica</option>
+                            <option value="2">Guanacaste, Costa Rica</option>
+                            <option value="3">Amsterdam, Países Bajos</option>
+                            <option value="4">Banff National Park, Canadá</option>
+                            <option value="5">Barcelona, España</option>
+                            <option value="6">Bora Bora, Polinesia Francesa</option>
+                            <option value="7">Cancún, México</option>
+                            <option value="8">Cinque Terre, Italia</option>
+                            <option value="9">Ciudad de México, México</option>
+                            <option value="10">Costa Amalfitana</option>
+                            <option value="11">Fiordos Noruegos, Noruega</option>
+                            <option value="12">Islas Galápagos, Ecuador</option>
+                            <option value="13">Islas Lofoten, Noruega</option>
+                            <option value="14">Kyoto, Japón</option>
+                            <option value="15">Madrid, España</option>
+                            <option value="16">New York, EEUU</option>
+                            <option value="17">París, Francia</option>
+                            <option value="18">Sidney, Australia</option>
+                        </select>
+
+                        <!-- Escoger Destino del vuelo -->
+                        <select name="Destino" id="destino-reservacion-vuelo">
+                            <option value="0">Destino</option>
+                            <option value="1">Alajuela, Costa Rica</option>
+                            <option value="2">Guanacaste, Costa Rica</option>
+                            <option value="3">Amsterdam, Países Bajos</option>
+                            <option value="4">Banff National Park, Canadá</option>
+                            <option value="5">Barcelona, España</option>
+                            <option value="6">Bora Bora, Polinesia Francesa</option>
+                            <option value="7">Cancún, México</option>
+                            <option value="8">Cinque Terre, Italia</option>
+                            <option value="9">Ciudad de México, México</option>
+                            <option value="10">Costa Amalfitana</option>
+                            <option value="11">Fiordos Noruegos, Noruega</option>
+                            <option value="12">Islas Galápagos, Ecuador</option>
+                            <option value="13">Islas Lofoten, Noruega</option>
+                            <option value="14">Kyoto, Japón</option>
+                            <option value="15">Madrid, España</option>
+                            <option value="16">New York, EEUU</option>
+                            <option value="17">París, Francia</option>
+                            <option value="18">Sidney, Australia</option>
+                        </select>
+
+                            <!-- Escoger Fecha de ida del vuelo -->
+                            <input type="date" id="fecha-reservacion-vuelo fecha-id-reservacion-vuelo" placeholder="Ida">
+
+                            <!-- Escoger Fecha de vuelta del vuelo -->
+                            <input type="date" id="fecha-reservacion-vuelo fecha-vuelta-reservacion-vuelo">
+
+                            <!-- Escoger Número de pasajeros del vuelo -->
+                            <!-- Escoger Destino del vuelo -->
+                            <select name="Pasajeros" id="numero-pasajeros-">
+                                <option value="0"># Pasajeros</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+
+                            <!-- Botón de envío para realizar la búsqueda de la información del vuelo -->
+                            <button class="enviar-reservacion-vuelo">Continuar</button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!--Cuadros tarifas y opciones-->
+
+        <div id="recuadros-tarifas">
+            <!--Economico-->
+            <div id="informacion-tarifa">
+                <div id="imagen-tarifa">
+                    <img src="../Multimedia/Imagenes/Tarifa Economica.jpg" alt="">
+                </div>
+                <div id="rellenado-tarifa">
+                    <h1 class="tarifa-titulo" style="color: rgb(0, 204, 17);">Económico</h1><br>
+                    <h2 style="color: #1d2736;">Beneficios</h2><br>
+                    <p>
+                        - <strong>Precio Asequible:</strong> Viaja a un precio más bajo, ideal para aquellos con un presupuesto ajustado. <br>
+                        - <strong>Opciones de Flexibilidad Limitada:</strong> Cambios y cancelaciones pueden estar sujetos a tarifas adicionales. <br>
+                        - <strong>Asientos Estándar:</strong> Asientos asignados aleatoriamente o disponibles para selección por una tarifa adicional. <br>
+                        - <strong>Equipaje de Mano:</strong> Incluye una pieza de equipaje de mano de tamaño estándar. <br>
+                    </p>                    
+                </div>
+            </div>
+
+            <!--Normal-->
+            <div id="informacion-tarifa">
+                <div id="imagen-tarifa">
+                    <img src="../Multimedia/Imagenes/Tarifa Normal.jpg" alt="">
+                </div>
+                <div id="rellenado-tarifa">
+                    <h1 class="tarifa-titulo">Normal</h1><br>
+                    <h2 style="color: #1d2736;">Beneficios</h2><br>
+                    <p>
+                        - <strong>Equilibrio entre Precio y Flexibilidad:</strong> Ofrece una combinación equilibrada de precio y opciones de cambio. <br>
+                        - <strong>Selección de Asientos:</strong> Posibilidad de seleccionar asientos estándar sin cargo adicional. <br>
+                        - <strong>Política de Cambio Flexible:</strong> Cambios y cancelaciones con tarifas moderadas o sin cargo adicional dentro de ciertos límites. <br>
+                        - <strong>Equipaje Registrado:</strong> Incluye una o más piezas de equipaje registradas sin cargo adicional. <br>
+                    </p>
+                </div>
+            </div>
+
+            <!--Premium-->
+            <div id="informacion-tarifa">
+                <div id="imagen-tarifa">
+                    <img src="../Multimedia/Imagenes/Tarifa Premium.jpg" alt="">
+                </div>
+                <div id="rellenado-tarifa">
+                    <h1 class="tarifa-titulo" style="color: goldenrod;">Premium</h1><br>
+                    <p>
+                        - <strong>Comodidad y Servicio de Primera Clase:</strong> Experimenta el máximo confort y servicio durante tu viaje <br>
+                        - <strong>Asientos Premium:</strong> Asientos más espaciosos y cómodos con mayor reclinación. <br>
+                        - <strong>Flexibilidad Total:</strong> Cambios y cancelaciones sin cargo adicional o con tarifas mínimas. <br>
+                        - <strong>Servicios Exclusivos:</strong> Acceso a salas VIP, prioridad en el embarque y en la recogida de equipaje. <br>
+                        - <strong>Equipaje Adicional:</strong> Mayor franquicia de equipaje registrada incluida en la tarifa. <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!--Footer de la página-->
+        <div id="footer-inicio">
+            <footer>
+                <!--Links hacia las redes sociales-->
+                <a href=""><img src="../Multimedia/Iconos/Instragram_white_icon.png" alt="Instragram_icon-inicio"></a>
+                <a href=""><img src="../Multimedia/Iconos/Facebook_white_icon.png" alt="Facebook_icon-inicio"></a>
+                <a href=""><img src="../Multimedia/Iconos/Twitter_white_icon.png" alt="Twitter_icon-inicio"></a>
+                <a href="../Sobre nosotros - Centro Ayuda/sobre-nosotros.html">Sobre nosotros</a>
+                <a href="../Sobre nosotros - Centro Ayuda/centro-ayuda.html">Centro de ayuda</a>
+                <a href="../../Documentación/Términos y Condiciones de JGJ Airlines.pdf" download="Términos y Condiciones de JGJ Airlines">Terminos y Condiciones</a>
+            </footer>
+        </div>
+    </div>
+    
+    <!-- Script -->
+    <script src="../Js/Barra-Reservacion.js" type="module"></script>
+</body>
+
+</html>

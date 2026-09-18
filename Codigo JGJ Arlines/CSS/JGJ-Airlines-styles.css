@@ -1,0 +1,465 @@
+@charset "UTF-8";
+
+/* 
+Copyright
+©JGJ Airlines - Derechos reservados
+
+Contacto: 
+
+Perfil de Linkedin: 
+*/
+
+
+/** Tipo de letra de todas las páginas */
+body {
+    font-family: Sintony,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+/** Aplica los atributos a todos los códigos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/** Header de las páginas */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Encapsula todo el header */
+#back {
+    padding: 47px 0;
+    background-color: #2A394F;
+}
+
+/* - */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    color: #15A4F9;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Poner lista de forma horizontal */
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+/* Estilos de los links del header */
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+}
+
+/* Opciones de la lista cuando el mouse pasa por encima */
+.menu .navbar ul li a:hover {
+    color: black;
+    background-color: rgb(220, 220, 220, 0.8);
+}
+
+/* No mostrar el menu desplegable */
+#menu {
+    display: none;
+}
+
+/* Icono */
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Acomodo según la resolución de la página */
+@media(max-width:991px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+    .back {
+        padding: 45px 0;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #2A394F;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
+
+/** Footer de las páginas */
+
+/* Footer */
+#footer-inicio {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+
+/* Links del footer */
+#footer-inicio footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Links cuando el mouse pasa por encima */
+#footer-inicio footer a:hover {
+    text-decoration: underline;
+}
+
+/* Imagenes del footer */
+#footer-inicio footer img {
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    transition-duration: 0.3s;
+}
+
+/* Cambiar tamaño al sobrepasar iconos */
+#footer-inicio footer img:hover {
+    transform: scale(1.3);
+    transition-duration: 0.3s;
+}
+
+/** Barra Reservación Vuelo */
+
+/* Encapsula toda la barra de reservación */
+#barra-reservacion-vuelo {
+    z-index: 100;
+}
+
+/* Texto de encabezado de la barra de reservación de vuelo */
+#encabezado-reservacion-vuelo {
+    border-bottom: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 10px;
+    width: 310px;
+    margin: 80px 0 0 0;
+    cursor: default;
+    color: #fff;
+    margin-left: 230px;
+}
+
+/* Contenido de la reservación */
+#informacion-reservacion-vuelo {
+    padding: 15px;
+    border-radius: 0 5px 5px 5px;
+    width: 1400px;
+    margin-left: 230px;
+    
+}
+
+/* Titulos para los inputs */
+#titulos-reservacion {
+    color: white;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#titulos-reservacion h1 {
+    font-size: 30px;
+}
+
+/* Acomodo titulos */
+
+.origen-reserva {
+    margin-right: 105px;
+    margin-left: 5px;
+}
+
+.destino-reserva {
+    margin-right: 100px;
+}
+
+.ida-reserva {
+    margin-right: 150px;
+}
+
+.vuelta-reserva {
+    margin-right: 110px;
+}
+
+/* Inputs de la reservación de vuelo */
+#rellenado-reservacion-vuelo select, input{
+    border: none;
+    border-bottom: 2px solid #212d41;
+    background-color: #e2e2e2;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #364249;
+    width: 190px;
+    height: 60px;
+}
+
+#selecciones-informacion-barra-reservacion option {
+    background-color: gainsboro;
+}
+
+/* Botón para enviar la informacion de vuelo */
+.enviar-reservacion-vuelo {
+    background-color: #333333; 
+    color: #FFFFFF; 
+    border: 2px solid #494848; 
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Botón con el mouse encima */
+.enviar-reservacion-vuelo:active {
+    background-color: #615f5f; 
+    color: #FFFFFF; 
+    border: 2px solid #696969; 
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.enviar-reservacion-vuelo:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+}
+
+/*? --------------------------------------------------------------------------------- */
+
+/** Index */
+
+/* Contenido dentro del index sin footer ni header */
+#informacion-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3c4655;
+}
+
+/* Cuerpo de la página */
+.body-index {
+    background-color: #3c4655;
+}
+
+/* Fondo superior en la página de inicio */
+#cuadro-fondo-inicio-superior {
+    height: 270px;
+    position: absolute;
+    background-color: #c7eaff;
+    opacity: 0.7;
+}
+
+/* Contenedor de información de ofertas en la página de inicio */
+#informacion-oferta-inicio {
+    position: relative;
+    border-radius: 6px;
+    display: block;
+    height: 189px;
+    width: 261.5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las imágenes dentro de las ofertas de inicio */
+#informacion-oferta-inicio img {
+    height: 173px;
+    border-radius: 5px;
+}
+
+/* Contenedor de oferta específico en la página de inicio */
+#oferta-inicio {
+    position: absolute;
+    top: 128px;
+    border: 2px solid #e4e2e2;
+    border-radius: 0 0 5px 5px;
+    background-color: #e4e2e2;
+    display: block;
+    height: 60px;
+    width: 100%;
+    padding: 7px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Contenedor de destino específico en la página de inicio */
+#destino-inicio {
+    position: absolute;
+    top: 133px;
+    border: 2px solid #e4e2e2;
+    border-radius: 0 0 5px 5px;
+    background-color: #e4e2e2;
+    display: block;
+    height: 55px;
+    width: 100%;
+    padding: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Efecto hover para el contenedor de imagen y nombre en la página de inicio */
+#contenedor-imagen-nombre-inicio:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    
+    transform: scale(1.050);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+
+    border-radius: 6px;
+    }
+
+/* Estilo para las imágenes de ofertas en Cancún */
+#informacion-oferta-inicio-cancun img {
+    width: 100%;
+}
+
+#informacion-oferta-inicio img {
+    width: 100%;
+}
+
+/* Contenedor de información de ofertas en Cancún */
+#informacion-oferta-inicio-cancun {
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    display: block;
+    height: 189px;
+    width: 261.5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de imagen y nombre en la página de inicio */
+#contenedor-imagen-nombre-inicio {
+    float: left;
+    margin: 0 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo para los enlaces dentro del contenedor de imagen y nombre */
+#contenedor-imagen-nombre-inicio a {
+    color: black;
+}
+
+/* Barra horizontal para las ofertas en la página de inicio */
+#barra-horizontal-ofertas-inicio {
+    float: left;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    background-image: url(../Multimedia/Imagenes/landscape-image.jpg);
+    background-repeat: none;
+    padding: 50px 50px 80px 55px;
+}
+
+/* Estilo para los enlaces dentro de la barra horizontal de ofertas */
+#barra-horizontal-ofertas-inicio a {
+    text-decoration: none;
+}
+
+/* Barra horizontal de ayuda en la página de inicio */
+#barra-horizontal-ayuda-inicio {
+    margin: 30px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+}
+
+/* Estilo para los enlaces dentro de la barra horizontal de destinos */
+#barra-horizontal-destinos-inicio a {
+    text-decoration: none;
+}
+
+/* Barra horizontal para los destinos en la página de inicio */
+#barra-horizontal-destinos-inicio {
+    display: block;
+    align-items: center;
+    float: left;
+    width: 1250px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background-image: url(../Multimedia/Imagenes/Hombre\ con\ boleta.jpg);
+    padding: 70px 25px 80px 55px;
+}
+
+/* Título de grupos de imágenes en la página de inicio */
+.titulo-grupos-imagenes-inicio {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    width: 167px;
+    margin-bottom: 20px;
+}
+
+/* Título para grupos de imágenes de ofertas */
+.titulo-grupos-imagenes-inicio-ofertas {
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    width: 167px;
+}
+
+/* Título para grupos de imágenes de destinos */
+.titulo-grupos-imagenes-inicio-destinos {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    width: 167px;
+    margin-bottom: 20px;
+}
+
+/* Título de la barra de ayuda en la página de inicio */
+.titulo-ayuda-barra-inicio {
+    color: #fff;
+    padding: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* text-shadow: Xpx Ypx Grosor color; */

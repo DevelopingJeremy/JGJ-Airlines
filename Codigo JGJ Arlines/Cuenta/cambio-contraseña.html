@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/JGJ-Airlines-styles.css" type="text/css"> <!-- Css Global -->
+    <link rel="stylesheet" href="../CSS/Cuenta.css"> <!-- Css Cuenta -->
+    <link rel="icon" type="image/png" href="../Multimedia/Iconos/Plane_icon.png">
+    <title>Cambiar contraseña | JGJ Airlines</title>
+</head>
+<!-- Esto es el cambio de contraseña -->
+
+<body class="body-cambio-contraseña">
+
+    <!-- Flecha retroceso -->
+    <div id="boton-retroceso">
+        <div class="flecha-return-div">
+            <div class="flechaAcostada"></div>
+            <div class="flechaArriba"></div>
+            <div class="flechaAbajo"></div>
+        </div>
+    </div>
+
+    <form action="" method="">
+        <fieldset class="fieldset-cambio-contraseña">
+            <div id="informacion-cambio-contraseña">
+                <img src="../Multimedia/Iconos/Plane_icon_2.png" alt="" width="50px">
+                <h1>Cambiar contraseña</h1><br>
+                <p style="color:#1AAB8A;">"Protege tu cuenta con una contraseña exclusiva de al menos 6 caracteres."</p>
+            </div>
+
+            <div id="relleno-cambio-contraseña">
+
+                <!--Insertar la contraseña nueva a cambiar.-->
+                <label for="cambiar_contraseña_contra_nueva">Contraseña nueva</label>
+                <input type="password" id="cambiar_contraseña_contra_nueva" name="cambiar_contraseña_contra_nueva"
+                    minlength="6" maxlength="60" placeholder="Contraseña nueva (6-60 caracteres)" size="25" required>
+                <br><br>
+
+                <!--Reescribir la contraseña nueva a cambiar que ya insertó-->
+                <label for="cambiar_contraseña_confirm_contra_nueva">Confirmar contraseña nueva</label>
+                <!--Se debe realizar un algoritmo que confirme que se haya digitado lo mismo que en "contraseña nueva"-->
+                <input type="password" id="cambiar_contraseña_confirm_contra_nueva"
+                    name="cambiar_contraseña_confirm_contra_nueva" minlength="6" maxlength="60"
+                    placeholder="Reescribe la contraseña nueva" size="25" required><br><br>
+
+                <!--Boton final de enviar-->
+                <button type="submit" class="button-cuenta">Cambiar</button>
+            </div>
+        </fieldset>
+    </form>
+    <script src="../Js/Cuenta.js"></script>
+</body>
+
+</html>

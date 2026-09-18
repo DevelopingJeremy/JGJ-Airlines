@@ -1,0 +1,257 @@
+/** CSS de los diferentes destinos */
+
+/* Cancún */
+
+/* Estilos para el recuadro de información del destino Cancún */
+#recuadro-informacion-destino-completo-cancun {
+    background-image: url(../Multimedia/Imagen_destino/Playa\ Cancún\,\ México.jpg);
+
+}
+
+/* Estilos para el contenedor dentro del recuadro de información del destino Cancún */
+#recuadro-informacion-destino-completo-cancun #container {
+    height: 230px;
+    width: 600px;
+    background-color: rgba(226, 226, 226, 0.7);
+    padding: 20px;
+    margin: 40px 0 0 360px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+/* Estilos para los encabezados dentro del contenedor del recuadro de información del destino Cancún */
+
+
+/* Estilos para el contenedor del cuerpo de la página de destino completo */
+#cuerpo-destino-completo {
+    background-color: #3c4655;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para la información de precios en la página de destino completo */
+.precio-informacion-destino {
+    text-align: right;
+    font-size: 25px;
+    color: #0b5e12;
+}
+
+/* Destinos totales */
+#recuadro-informacion-destino-completo-cancun,
+#recuadro-informacion-destino-completo-amsterdam,
+#recuadro-informacion-destino-completo-paris,
+#recuadro-informacion-destino-completo-ciudad-de-mexico,
+#recuadro-informacion-destino-completo-bora-bora,
+#recuadro-informacion-destino-completo-banff,
+#recuadro-informacion-destino-completo-cinque,
+#recuadro-informacion-destino-completo-fiordos,
+#recuadro-informacion-destino-completo-galapagos,
+#recuadro-informacion-destino-completo-kyoto,
+#recuadro-informacion-destino-completo-costa-amalfitana,
+#recuadro-informacion-destino-completo-lofoten,
+#recuadro-informacion-destino-completo-madrid,
+#recuadro-informacion-destino-completo-barcelona,
+#recuadro-informacion-destino-completo-new-york,
+#recuadro-informacion-destino-completo-sidney {
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #303d50;
+    border-radius: 10px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+    height: 350px;
+    width: 1000px;
+}
+
+/* Destinos totales contenedores */
+#recuadro-informacion-destino-completo-cancun #container,
+#recuadro-informacion-destino-completo-amsterdam #container,
+#recuadro-informacion-destino-completo-paris #container,
+#recuadro-informacion-destino-completo-ciudad-de-mexico #container,
+#recuadro-informacion-destino-completo-bora-bora #container,
+#recuadro-informacion-destino-completo-banff #container,
+#recuadro-informacion-destino-completo-cinque #container,
+#recuadro-informacion-destino-completo-fiordos #container,
+#recuadro-informacion-destino-completo-galapagos #container,
+#recuadro-informacion-destino-completo-kyoto #container,
+#recuadro-informacion-destino-completo-costa-amalfitana #container,
+#recuadro-informacion-destino-completo-lofoten #container,
+#recuadro-informacion-destino-completo-madrid #container,
+#recuadro-informacion-destino-completo-barcelona #container,
+#recuadro-informacion-destino-completo-new-york #container,
+#recuadro-informacion-destino-completo-sidney #container {
+    height: 230px;
+    width: 600px;
+    background-color: rgba(226, 226, 226, 0.7);
+    padding: 20px;
+    margin: 40px 0 0 360px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+/* Estilos para los encabezados dentro del contenedor del recuadro de información */
+#recuadro-informacion-destino-completo-cancun h1,
+#recuadro-informacion-destino-completo-amsterdam h1,
+#recuadro-informacion-destino-completo-paris h1,
+#recuadro-informacion-destino-completo-ciudad-de-mexico h1,
+#recuadro-informacion-destino-completo-bora-bora h1,
+#recuadro-informacion-destino-completo-banff h1,
+#recuadro-informacion-destino-completo-cinque h1,
+#recuadro-informacion-destino-completo-fiordos h1,
+#recuadro-informacion-destino-completo-galapagos h1,
+#recuadro-informacion-destino-completo-kyoto h1,
+#recuadro-informacion-destino-completo-costa-amalfitana h1,
+#recuadro-informacion-destino-completo-lofoten h1,
+#recuadro-informacion-destino-completo-madrid h1,
+#recuadro-informacion-destino-completo-barcelona h1,
+#recuadro-informacion-destino-completo-new-york h1,
+#recuadro-informacion-destino-completo-sidney h1 {
+    padding-bottom: 10px;
+}
+
+/* Cancún */
+
+/* Estilos para el recuadro de información del destino Cancún */
+#recuadro-informacion-destino-completo-cancun {
+    background-image: url(../Multimedia/Imagen_destino/Playa\ Cancún\,\ México.jpg);
+}
+
+
+/* Ámsterdam, Países Bajos */
+
+/* Estilos para el recuadro de información del destino Ámsterdam */
+#recuadro-informacion-destino-completo-amsterdam {
+    background-image: url(../Multimedia/Imagen_destino/Amsterdam\,\ Países\ Bajos.jpg);
+}
+
+
+/* París, Francia */
+
+/* Estilos para el recuadro de información del destino París */
+#recuadro-informacion-destino-completo-paris {
+    background-image: url(../Multimedia/Imagen_destino/París\,\ Francia.jpg);
+}
+
+
+/* Ciudad de México */
+
+/* Estilos para el recuadro de información del destino Ciudad de México */
+#recuadro-informacion-destino-completo-ciudad-de-mexico {
+    background-image: url(../Multimedia/Imagen_destino/Ciudad\ de\ méxico\,\ México.jpg);
+    background-size: auto;
+    background-position: center;
+    border: 2px solid #303d50;
+    border-radius: 10px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+    height: 350px;
+    width: 1000px;
+}
+
+/* Estilos para el contenedor dentro del recuadro de información del destino Ciudad de México */
+#recuadro-informacion-destino-completo-ciudad-de-mexico #container {
+    height: 250px;
+    width: 600px;
+    background-color: rgb(226, 226, 226, 0.8);
+    padding: 20px;
+    margin: 40px 0 0 360px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+
+/* Bora Bora, Polinesia Francesa */
+
+/* Estilos para el recuadro de información del destino Polinesia Francesa */
+#recuadro-informacion-destino-completo-bora-bora {
+    background-image: url(../Multimedia/Imagen_destino/Bora\ Bora\,\ Polinesia\ Francesa.jpg);
+}
+
+
+/* Baff National Park, Canadá */
+
+/* Estilos para el recuadro de información del destino Banff National Park */
+#recuadro-informacion-destino-completo-banff {
+    background-image: url(../Multimedia/Imagen_destino/Banff\ National\ Park\,\ Canadá.jpg);
+}
+
+
+/* Cinque Terre, Italia */
+
+/* Estilos para el recuadro de información del destino Cinque Terre */
+#recuadro-informacion-destino-completo-cinque {
+    background-image: url(../Multimedia/Imagen_destino/Cinque\ Terre\,\ Italia.jpg);
+}
+
+
+/* Fiordos Noruegos, Noruega */
+
+/* Estilos para el recuadro de información del destino Fiordos Noruegos */
+#recuadro-informacion-destino-completo-fiordos {
+    background-image: url(../Multimedia/Imagen_destino/Fiordos\ Noruegos\,\ Noruega.jpg);
+}
+
+
+/* Islas Galápagos, Ecuador */
+
+/* Estilos para el recuadro de información del destino Islas Galápagos */
+#recuadro-informacion-destino-completo-galapagos {
+    background-image: url(../Multimedia/Imagen_destino/Islas\ Galápagos\,\ Ecuador.jpg);
+}
+
+
+/* Kyoto, Japón */
+
+/* Estilos para el recuadro de información del destino Kyoto */
+#recuadro-informacion-destino-completo-kyoto {
+    background-image: url(../Multimedia/Imagen_destino/Kyoto\,\ Japón.jpg);
+}
+
+
+/* Costa Amalfitana, Italia */
+
+/* Estilos para el recuadro de información del destino Costa Amalfitana */
+#recuadro-informacion-destino-completo-costa-amalfitana {
+    background-image: url(../Multimedia/Imagen_destino/Costa\ Amalfitana\,\ Italia.jpg);
+}
+
+
+/* Islas Lofoten, Noruega */
+
+/* Estilos para el recuadro de información del destino Islas Lofoten */
+#recuadro-informacion-destino-completo-lofoten {
+    background-image: url(../Multimedia/Imagen_destino/Islas\ Lofoten\,\ Noruega.jpg);
+}
+
+
+/* Madrid, España */
+
+/* Estilos para el recuadro de información del destino Madrid */
+#recuadro-informacion-destino-completo-madrid {
+    background-image: url(../Multimedia/Imagen_destino/Madrid\,\ España.jpg);
+}
+
+
+/* Barcelona, España */
+
+/* Estilos para el recuadro de información del destino Barcelona */
+#recuadro-informacion-destino-completo-barcelona {
+    background-image: url(../Multimedia/Imagen_destino/Barcelona\,\ España.jpg);
+}
+
+
+/* New York, EEUU */
+
+/* Estilos para el recuadro de información del destino New York */
+#recuadro-informacion-destino-completo-new-york {
+    background-image: url(../Multimedia/Imagen_destino/New\ York\,\ Estados\ Unidos.jpg);
+}
+
+
+/* Sidney, Australia */
+
+/* Estilos para el recuadro de información del destino Sidney */
+#recuadro-informacion-destino-completo-sidney {
+    background-image: url(../Multimedia/Imagen_destino/Sidney\ Australia.jpg);
+}

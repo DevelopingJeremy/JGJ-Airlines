@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaliza tu viaje | JGJ Airlines</title>
+    <link rel="stylesheet" href="../CSS/JGJ-Airlines-styles.css" type="text/css"> <!-- CSS Global -->
+    <link rel="stylesheet" href="../CSS/Sistema Pago.css"> <!-- CSS Sistema Pago -->
+    <link rel="stylesheet" href="../CSS/Dest, Ofer, Tari.css"> <!-- Tarifas, Destinos, Ofertas -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../Js/bootstrap.js"></script>
+    <link rel="icon" type="image/png" href="../Multimedia/Iconos/Plane_icon.png">
+</head>
+
+<body class="body-index">
+    <div id="todito">
+
+    </div>
+    <!-- Header de la página -->
+    <header>
+        <div id="back">
+            <div class="menu container">
+
+                <!-- Logo -->
+                <a href="../Inicio - Reserva/index.html" class="logo"><img
+                        src="../Multimedia/Logo/Letras verde claro, Logo JGJ.png"
+                        alt="Logo JGJ-Airlines Letras verde claro" style="height: 50px;"></a>
+                <input type="checkbox" id="menu">
+
+                <!-- Icono del menú interactivo -->
+                <label for="menu">
+                    <img src="../Multimedia/Iconos/Menu_Icon.png" class="menu-icono" alt="">
+                </label>
+
+                <!-- Lista interactiva del header -->
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../Inicio - Reserva/index.html">Reserva</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/ofertas.html">Ofertas</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/destinos.html">Destinos</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/tarifas.html">Tarifas</a></li>
+                        <li><a href="../Sobre nosotros - Centro Ayuda/centro-ayuda.html">Centro de Ayuda</a></li>
+                        <li><a href="../Cuenta/log-in.html"><img src="../Multimedia/Iconos/User_icon.png" alt=""
+                                    style="height: 25px;"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="cuerpo-tarifa-pago">
+        <!-- Caja que encapsula todo el contenido del cuerpo -->
+        <div id="informacion-tarifa-pago">
+
+            <div id="informacion-reserva-seleccionada">
+                <!-- Recoger informacion de la reserva ya hecha con JS-->
+                <form action="" class="inputs-reserva-tarifa-pago">
+                    <input type="text" readonly alt="Origen" placeholder="Origen"
+                        id="inputs-reserva-tarifa-pago__origen">
+                    <input type="text" readonly alt="Destino" placeholder="Destino"
+                        id="inputs-reserva-tarifa-pago__destino">
+                    <input type="text" readonly alt="Ida" placeholder="Fecha ida" id="inputs-reserva-tarifa-pago__ida">
+                    <input type="text" readonly alt="Vuelta" placeholder="Fecha vuelta"
+                        id="inputs-reserva-tarifa-pago__vuelta">
+                    <input type="text" readonly alt="Pasajeros" placeholder="# Pasajeros"
+                        id="inputs-reserva-tarifa-pago__pasajeros">
+
+                </form>
+                <h1 style="color: white; margin-top: 70px;">¿COMO TE GUSTARÍA VIAJAR?</h1>
+            </div>
+
+
+
+
+            <div id="tarifas-pago">
+                <!--Economico-->
+                <div id="informacion-tarifa" class="informacion-tarifa">
+                    <div id="imagen-tarifa">
+                        <img src="../Multimedia/Imagenes/Tarifa Economica.jpg" alt="">
+                    </div>
+                    <div id="rellenado-tarifa">
+                        <h1 class="tarifa-titulo" style="color: rgb(0, 204, 17);">Economico</h1><br>
+                        <h2 style="color: #1d2736;">Beneficios</h2><br>
+                        <p>
+                            - <strong>Precio Asequible:</strong> Viaja a un precio más bajo, ideal para aquellos con un
+                            presupuesto ajustado. <br>
+                            - <strong>Opciones de Flexibilidad Limitada:</strong> Cambios y cancelaciones pueden estar
+                            sujetos a tarifas adicionales. <br>
+                            - <strong>Asientos Estándar:</strong> Asientos asignados aleatoriamente o disponibles para
+                            selección por una tarifa adicional. <br>
+                            - <strong>Equipaje de Mano:</strong> Incluye una pieza de equipaje de mano de tamaño
+                            estándar. <br>
+                        </p>
+                    </div>
+                </div>
+
+                <!--Normal-->
+                <div id="informacion-tarifa" class="informacion-tarifa">
+                    <div id="imagen-tarifa">
+                        <img src="../Multimedia/Imagenes/Tarifa Normal.jpg" alt="">
+                    </div>
+                    <div id="rellenado-tarifa">
+                        <h1 class="tarifa-titulo">Normal</h1><br>
+                        <h2 style="color: #1d2736;">Beneficios</h2><br>
+                        <p>
+                            - <strong>Equilibrio entre Precio y Flexibilidad:</strong> Ofrece una combinación
+                            equilibrada de precio y opciones de cambio. <br>
+                            - <strong>Selección de Asientos:</strong> Posibilidad de seleccionar asientos estándar sin
+                            cargo adicional. <br>
+                            - <strong>Política de Cambio Flexible:</strong> Cambios y cancelaciones con tarifas
+                            moderadas o sin cargo adicional dentro de ciertos límites. <br>
+                            - <strong>Equipaje Registrado:</strong> Incluye una o más piezas de equipaje registradas sin
+                            cargo adicional. <br>
+                        </p>
+
+                    </div>
+                </div>
+
+                <!--Premium-->
+                <div id="informacion-tarifa" class="informacion-tarifa">
+                    <div id="imagen-tarifa">
+                        <img src="../Multimedia/Imagenes/Tarifa Premium.jpg" alt="">
+                    </div>
+                    <div id="rellenado-tarifa">
+                        <h1 class="tarifa-titulo" style="color: goldenrod;">Premium</h1><br>
+                        <p>
+                            - <strong>Comodidad y Servicio de Primera Clase:</strong> Experimenta el máximo confort y
+                            servicio durante tu viaje <br>
+                            - <strong>Asientos Premium:</strong> Asientos más espaciosos y cómodos con mayor
+                            reclinación. <br>
+                            - <strong>Flexibilidad Total:</strong> Cambios y cancelaciones sin cargo adicional o con
+                            tarifas mínimas. <br>
+                            - <strong>Servicios Exclusivos:</strong> Acceso a salas VIP, prioridad en el embarque y en
+                            la recogida de equipaje. <br>
+                            - <strong>Equipaje Adicional:</strong> Mayor franquicia de equipaje registrada incluida en
+                            la tarifa. <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón continuar -->
+            <div id="procesado-tarifa">
+                <button type="submit" class="boton-continuar-tarifa-pago">Continuar</button>
+            </div>
+        </div>
+    </div>
+    <script src="../Js/Pago/Tarifa.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate | JGJ Airlines</title>
+    <link rel="stylesheet" href="../CSS/JGJ-Airlines-styles.css" type="text/css"> <!-- Css Global -->
+    <link rel="stylesheet" href="../CSS/Cuenta.css"> <!-- Css Cuenta -->
+    <link rel="icon" type="image/png" href="../Multimedia/Iconos/Plane_icon.png">
+</head>
+
+<body class="body-signup">
+
+    <!-- Flecha retroceso -->
+    <div id="boton-retroceso">
+        <div class="flecha-return-div">
+            <div class="flechaAcostada"></div>
+            <div class="flechaArriba"></div>
+            <div class="flechaAbajo"></div>
+        </div>
+    </div>
+
+    <form action="" method="get" id="form-signup">
+        <fieldset class="fieldset-signup">
+            <div id="informacion-signup">
+                <img src="../Multimedia/Iconos/Plane_icon_2.png" alt="JGJ Airlines Logo" width="50px"><br>
+
+                <!-- Titulo crear cuenta -->
+                <h1>Crea tu cuenta</h1>
+
+                <div id="rellenado-signup"></div>
+                <!--Registro del nombre-->
+                <input type="text" id="nombre_signup" name="nombre_signup" minlength="2" maxlength="35"
+                    placeholder="Nombre">
+
+                <!--Registro del apellido-->
+                <input type="text" id="apellido_signup" name="apellido_signup" minlength="2" maxlength="50"
+                    placeholder="Primer Apellido">
+
+                <!--Registro del apellido-->
+                <input type="text" id="apellido_signup02" name="apellido_signup" minlength="2" maxlength="50"
+                    placeholder="Segundo Apellido">
+
+                <!--Registro de la fecha de nacimiento-->
+                <input type="date" id="fecha_de_nacimiento_signup" name="fecha_de_nacimiento_signup">
+
+                <!--Registro del numero-->
+                <input type="number" id="num_telefono_signup" name="num_telefono_signup" placeholder="Número de telefono" size="30">
+
+                <!--Registro del correo electronico-->
+                <input type="email" id="correo_signup" name="correo_signup" placeholder="Correo electronico" size="25">
+
+                <!--Registro de contraseña-->
+                <input type="password" id="signin_contrasena" placeholder="Contraseña" name="signin_contrasena">
+
+                <!--Registro de confirmar contraseña-->
+                <input type="password" id="signin_confirmar_contrasena" placeholder="Confirmar Contraseña"
+                    name="signin_confirmar_contrasena">
+
+                <!--Registro de aceptar terminos y condiciones-->
+                <input type="checkbox" name="confirm" id="terminos-signup" class="checkbox-signup" required>
+                <label>Acepto los <a href="../../Documentación/Términos y Condiciones de JGJ Airlines.pdf">Términos y condiciones</a></label><br><br>
+
+                <!--Boton de registro final-->
+                <button type="submit" class="button-cuenta">Registrarse</button><br><br>
+                ¿Ya tienes una cuenta?<a href="../Cuenta/log-in.html"><br>Inicia sesión</a>
+            </div>
+        </fieldset>
+    </form>
+    <script src="../Js/Cuenta_JS/Sing-Up.js"></script>
+</body>
+
+</html>

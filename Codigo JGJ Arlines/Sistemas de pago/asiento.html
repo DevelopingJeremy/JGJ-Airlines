@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaliza tu viaje | JGJ Airlines</title>
+    <link rel="stylesheet" href="../CSS/JGJ-Airlines-styles.css" type="text/css"> <!-- CSS Global -->
+    <link rel="stylesheet" href="../CSS/Sistema Pago.css"> <!-- CSS Sistema Pago -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../Js/bootstrap.js"></script>
+    <link rel="icon" type="image/png" href="../Multimedia/Iconos/Plane_icon.png">
+</head>
+
+<body class="body-index">
+    <!-- Header de la página -->
+    <header>
+        <div id="back">
+            <div class="menu container">
+
+                <!-- Logo -->
+                <!-- Logo -->
+                <a href="../Inicio - Reserva/index.html" class="logo"><img src="../Multimedia/Logo/Letras verde claro, Logo JGJ.png"
+                    alt="Logo JGJ-Airlines Letras verde claro" style="height: 50px;"></a>
+                <input type="checkbox" id="menu">
+
+                <!-- Icono del menú interactivo -->
+                <label for="menu">
+                    <img src="../Multimedia/Iconos/Menu_Icon.png" class="menu-icono" alt="">
+                </label>
+
+                <!-- Lista interactiva del header -->
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../Inicio - Reserva/index.html">Reserva</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/ofertas.html">Ofertas</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/destinos.html">Destinos</a></li>
+                        <li><a href="../Ofertas, Destinos, Tarifas/tarifas.html">Tarifas</a></li>
+                        <li><a href="../Sobre nosotros - Centro Ayuda/centro-ayuda.html">Centro de Ayuda</a></li>
+                        <li><a href="../Cuenta/log-in.html"><img src="../Multimedia/Iconos/User_icon.png" alt=""
+                                    style="height: 25px;"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Caja que encapsula todo el contenido del cuerpo -->
+    <div id="informacion-escoger-asiento">
+        <div class="contenedor-seleccion">
+            <h1>Seleccione su Asiento</h1>
+            <h3 style="color: #fff;">Asientos:</h3>
+            <ul style="color: #fff;">
+                <li>Economico: A - J</li>
+                <li>Normal: K - O</li>
+                <li>Premium: P - T</li>
+            </ul>
+            <h2 style="color: #fff; text-align: center;">Parte trasera del Avión</h2>
+            <div id="contenedor-asientos"></div>
+            <h2 style="color: #fff; text-align: center;">Punta del Avión</h2>
+            <h4 style="color: white; margin-bottom: 20px;">Asientos Seleccionados: <br><span id="asientos-seleccionados"></span></h4>
+            <button id="enviar">Enviar</button>
+        </div>
+    </div>
+    <script src="../Js/Pago/Asientos.js"></script>
+</body>
+
+</html>

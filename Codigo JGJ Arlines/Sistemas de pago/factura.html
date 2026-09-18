@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura | JGJ Airlines</title>
+    <link rel="icon" type="image/png" href="../Multimedia/Iconos/Plane_icon.png">
+    <link rel="stylesheet" href="../CSS/Factura.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Factura Final</h1>
+        <img src="../Multimedia/Logo/Letras Negras, Fondo blanco, Logo JGJ.jpg" alt="Logo JGJ">
+        <form class="invoice-form">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" id="nombre" readonly>
+
+            <label for="correo" class="form-label">Correo Electrónico:</label>
+            <input type="email" id="correo" readonly>
+
+            <label for="tarjeta" class="form-label">Número de Tarjeta:</label>
+            <input type="text" id="tarjeta" readonly>
+
+            <label for="origen" class="form-label">Origen:</label>
+            <input type="text" id="origen" readonly>
+
+            <label for="destino" class="form-label">Destino:</label>
+            <input type="text" id="destino" readonly>
+
+            <label for="fecha-id" class="form-label">Fecha de Ida:</label>
+            <input type="text" id="fecha-ida" readonly>
+
+            <label for="fecha-vuelta" class="form-label">Fecha de Regreso:</label>
+            <input type="text" id="fecha-vuelta" readonly>
+
+            <label for="num-pasajeros" class="form-label">Número de Pasajeros:</label>
+            <input type="number" id="num-pasajeros" min="1" readonly>
+
+            <label for="tipo-tarifa" class="form-label">Tipo de Tarifa:</label>
+            <input type="text" id="tarifa" readonly>
+
+            <label for="asientos" class="form-label">Asientos Seleccionados:</label>
+            <input type="text" id="asientos" readonly>
+
+            <label for="total" class="form-label">Total:</label>
+            <input type="text" id="total" readonly>
+
+            <button  class="form-button" id="btn-inicio">Volver al Inicio</button>
+            <button  class="form-button" id="btn-imprimir">Imprimir</button>
+
+        </form>
+    </div>
+
+    <!-- Script -->
+    <script src="../Js/Pago/Generar-factura.js"></script>
+</body>
+
+</html>

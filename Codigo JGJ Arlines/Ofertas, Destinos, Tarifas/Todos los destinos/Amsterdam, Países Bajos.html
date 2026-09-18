@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ámsterdam | JGJ Airlines</title>
+    <link rel="stylesheet" href="../../CSS/JGJ-Airlines-styles.css" type="text/css"> <!-- CSS Global -->
+    <link rel="stylesheet" href="../../CSS/Todos_Destinos.css"> <!-- CSS De todos los destinos -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../Js/bootstrap.js"></script>
+    <link rel="icon" type="image/png" href="../../Multimedia/Iconos/Plane_icon.png">
+</head>
+
+<body class="body-destino-completo">
+    <!--header de la página-->
+    <header>
+        <div id="back">
+            <div class="menu container">
+                <!-- Logo -->
+                <a href="../../Inicio - Reserva/index.html" class="logo"><img
+                        src="../../Multimedia/Logo/Letras verde claro, Logo JGJ.png"
+                        alt="Logo JGJ-Airlines Letras verde claro" style="height: 50px;"></a>
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="../../Multimedia/Iconos/Menu_Icon.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../../Inicio - Reserva/index.html">Reserva</a></li>
+                        <li><a href="../../Ofertas, Destinos, Tarifas/ofertas.html">Ofertas</a></li>
+                        <li><a href="../../Ofertas, Destinos, Tarifas/destinos.html">Destinos</a></li>
+                        <li><a href="../../Ofertas, Destinos, Tarifas/tarifas.html">Tarifas</a></li>
+                        <li><a href="../../Inicio - Reserva/carrito.html">Tiquetes</a></li>
+                        <li><a href="../../Cuenta/log-in.html"><img src="../../Multimedia/Iconos/User_icon.png" alt=""
+                                    style="height: 25px;"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--Barra de Reservación-->
+    <div id="cuerpo-destino-completo">
+        <!-- Barra de reservación de vuelos interactiva -->
+        <div id="barra-reservacion-vuelo">
+
+            <!-- Título de la Barra de Reservación -->
+            <div id="encabezado-reservacion-vuelo">
+                <h1>¡Reservá ahora!</h1>
+            </div>
+
+            <!-- Caja Información de la barra interactiva -->
+            <div id="informacion-reservacion-vuelo">
+
+                <!-- Opciones de rellenado de información de la barra -->
+                <div id="rellenado-reservacion-vuelo">
+                    <nav class="rellenado-vuelo-navbar">
+                        <form action="" method="post" id="selecciones-informacion-barra-reservacion">
+
+                            <!-- Escoger Origen del vuelo -->
+                            <select name="Origen" id="origen-reservacion-vuelo">
+                                <option value="0">Origen</option>
+                                <option value="1">Alajuela, Costa Rica</option>
+                                <option value="2">Guanacaste, Costa Rica</option>
+                                <option value="3">Amsterdam, Países Bajos</option>
+                                <option value="4">Banff National Park, Canadá</option>
+                                <option value="5">Barcelona, España</option>
+                                <option value="6">Bora Bora, Polinesia Francesa</option>
+                                <option value="7">Cancún, México</option>
+                                <option value="8">Cinque Terre, Italia</option>
+                                <option value="9">Ciudad de México, México</option>
+                                <option value="10">Costa Amalfitana</option>
+                                <option value="11">Fiordos Noruegos, Noruega</option>
+                                <option value="12">Islas Galápagos, Ecuador</option>
+                                <option value="13">Islas Lofoten, Noruega</option>
+                                <option value="14">Kyoto, Japón</option>
+                                <option value="15">Madrid, España</option>
+                                <option value="16">New York, EEUU</option>
+                                <option value="17">París, Francia</option>
+                                <option value="18">Sidney, Australia</option>
+                            </select>
+
+                            <!-- Escoger Destino del vuelo -->
+                            <select name="Destino" id="destino-reservacion-vuelo">
+                                <option value="0">Destino</option>
+                                <option value="1">Alajuela, Costa Rica</option>
+                                <option value="2">Guanacaste, Costa Rica</option>
+                                <option value="3">Amsterdam, Países Bajos</option>
+                                <option value="4">Banff National Park, Canadá</option>
+                                <option value="5">Barcelona, España</option>
+                                <option value="6">Bora Bora, Polinesia Francesa</option>
+                                <option value="7">Cancún, México</option>
+                                <option value="8">Cinque Terre, Italia</option>
+                                <option value="9">Ciudad de México, México</option>
+                                <option value="10">Costa Amalfitana</option>
+                                <option value="11">Fiordos Noruegos, Noruega</option>
+                                <option value="12">Islas Galápagos, Ecuador</option>
+                                <option value="13">Islas Lofoten, Noruega</option>
+                                <option value="14">Kyoto, Japón</option>
+                                <option value="15">Madrid, España</option>
+                                <option value="16">New York, EEUU</option>
+                                <option value="17">París, Francia</option>
+                                <option value="18">Sidney, Australia</option>
+                            </select>
+
+                            <!-- Escoger Fecha de ida del vuelo -->
+                            <input type="date" id="fecha-id-reservacion-vuelo" placeholder="Ida">
+
+                            <!-- Escoger Fecha de vuelta del vuelo -->
+                            <input type="date" id="fecha-vuelta-reservacion-vuelo">
+
+                            <!-- Escoger Número de pasajeros del vuelo -->
+                            <!-- Escoger Destino del vuelo -->
+                            <select name="Pasajeros" id="numero-pasajeros-">
+                                <option value="0"># Pasajeros</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+
+                            <!-- Botón de envío para realizar la búsqueda de la información del vuelo -->
+                            <button class="enviar-reservacion-vuelo">Continuar</button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--Informacion del Destino-->
+        <section>
+            <div id="recuadro-informacion-destino-completo-amsterdam">
+                <div id="container">
+                    <h1>Ámsterdam, Países Bajos</h1>
+                    <p class="parrafo-informacion-destino-completo">
+                        Desde Costa Rica a Ámsterdam, te espera una experiencia única.
+                        Unas 11 horas de vuelo.
+                        Explora la rica historia y cultura de la ciudad, los famosos canales, museos como el Rijksmuseum
+                        y la Casa de Ana Frank.
+                        La gastronomía incluye platos como el arenque y el stroopwafel.
+                        Ámsterdam tiene una historia fascinante, desde sus orígenes como pueblo pesquero hasta
+                        convertirse en un centro cultural y comercial.
+                    </p>
+                    <p class="precio-informacion-destino">
+                        <strong>USD </strong>$500
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--Barra de Destinos-->
+
+        <div id="barra-horizontal-destinos-inicio">
+            <a href="../Ofertas, Destinos, Tarifas/destinos.html">
+                <h1 class="titulo-grupos-imagenes-inicio-destinos">Más Destinos</h1>
+            </a>
+
+            <!-- Banff National Park, Canadá -->
+            <div id="contenedor-imagen-nombre-inicio">
+                <a href="Banff National Park, Canadá.html">
+                    <div id="informacion-oferta-inicio">
+                        <img src="../../Multimedia/Imagenes destinos/Banff National Park, Canadá.jpg" alt="">
+                        <div id="oferta-inicio">
+                            <span class="lugar" style="font-size: 19px;">Banff National Park, Canadá</span><br>
+                        </div>
+                </a>
+            </div>
+            <!-- Bora Bora, Polinesia Francesa -->
+        </div>
+        <div id="contenedor-imagen-nombre-inicio">
+            <a href="Bora Bora, Polinesia Francesa.html">
+                <div id="informacion-oferta-inicio">
+                    <img src="../../Multimedia/Imagenes destinos/Bora Bora, Polinesia Francesa.jpg" alt="">
+                    <div id="oferta-inicio">
+                        <span class="lugar" style="font-size: 19px;">Bora Bora, Polinesia Francesa</span><br>
+                    </div>
+            </a>
+        </div>
+    </div>
+    <!--Cinque Terre, Italia-->
+    <div id="contenedor-imagen-nombre-inicio">
+        <a href="Cinque Terre, Italia.html">
+            <div id="informacion-oferta-inicio">
+                <img src="../../Multimedia/Imagenes destinos/Cinque Terre, Italia.jpg" alt="">
+                <div id="oferta-inicio">
+                    <span class="lugar" style="font-size: 19px;">Cinque Terre, Italia</span><br>
+                </div>
+        </a>
+        <!-- Costa Amalfitana, Italia -->
+    </div>
+    </div>
+    <div id="contenedor-imagen-nombre-inicio">
+        <a href="Costa Amalfitana, Italia.html">
+            <div id="informacion-oferta-inicio">
+                <img src="../../Multimedia/Imagenes destinos/Costa Amalfitana, Italia.jpg" alt="">
+                <div id="oferta-inicio">
+                    <span class="lugar" style="font-size: 19px;">Costa Amalfitana, Italia</span><br>
+                </div>
+        </a>
+    </div>
+    </div>
+    <!-- >Fiordos Noruegos, Noruega -->
+    <div id="contenedor-imagen-nombre-inicio">
+        <a href="Fiordos Noruegos, Noruega.html">
+            <div id="informacion-oferta-inicio">
+                <img src="../../Multimedia/Imagenes destinos/Fiordos Noruegos, Noruega.jpg" alt="">
+                <div id="oferta-inicio">
+                    <span class="lugar" style="font-size: 19px;">Fiordos Noruegos, Noruega</span><br>
+                </div>
+        </a>
+    </div>
+    </div>
+    <!-- Islas Galápagos, Ecuador -->
+    <div id="contenedor-imagen-nombre-inicio">
+        <a href="Islas Galápagos, Ecuador.html">
+            <div id="informacion-oferta-inicio">
+                <img src="../../Multimedia/Imagenes destinos/Islas Galápagos, Ecuador.jpg" alt="">
+                <div id="oferta-inicio">
+                    <span class="lugar" style="font-size: 19px;">Islas Galápagos, Ecuador</span><br>
+                </div>
+        </a>
+    </div>
+    </div>
+    <!-- Islas Lofoten, Noruega -->
+    <div id="contenedor-imagen-nombre-inicio">
+        <a href="Islas Lofoten, Noruega.html">
+            <div id="informacion-oferta-inicio">
+                <img src="../../Multimedia/Imagenes destinos/Islas Lofoten, Noruega.jpg" alt="">
+                <div id="oferta-inicio">
+                    <span class="lugar" style="font-size: 19px;">Islas Lofoten, Noruega</span><br>
+                </div>
+        </a>
+    </div>
+    </div>
+    <!-- Kyoto, Japón -->
+    <div id="contenedor-imagen-nombre-inicio">
+        <a href="Kyoto, Japón.html">
+            <div id="informacion-oferta-inicio">
+                <img src="../../Multimedia/Imagenes destinos/Kyoto, Japón.jpg" alt="">
+                <div id="oferta-inicio">
+                    <span class="lugar" style="font-size: 19px;">Kyoto, Japón</span><br>
+                </div>
+        </a>
+    </div>
+    </div>
+    </div>
+
+    <!--Footer de la página-->
+    <div id="footer-inicio">
+        <footer>
+            <!--Links hacia las redes sociales-->
+            <a href=""><img src="../../Multimedia/Iconos/Instragram_white_icon.png" alt="Instragram_icon-inicio"></a>
+            <a href=""><img src="../../Multimedia/Iconos/Facebook_white_icon.png" alt="Facebook_icon-inicio"></a>
+            <a href=""><img src="../../Multimedia/Iconos/Twitter_white_icon.png" alt="Twitter_icon-inicio"></a>
+            <a href="../../Sobre nosotros - Centro Ayuda/sobre-nosotros.html">Sobre nosotros</a>
+            <a href="../../Sobre nosotros - Centro Ayuda/centro-ayuda.html">Centro de ayuda</a>
+            <a href="../../../Documentación/Términos y Condiciones de JGJ Airlines.pdf"
+                download="Términos y Condiciones de JGJ Airlines">Terminos y Condiciones</a>
+        </footer>
+    </div>
+    </div>
+    </div>
+
+    <!-- Script -->
+    <script src="../../Js/Barra-Reservacion.js" type="module"></script>
+</body>
+
+</html>

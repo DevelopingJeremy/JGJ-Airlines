@@ -1,0 +1,330 @@
+/** Centro de Ayuda */
+.centro-de-ayuda-body {
+    background-color: #3c4655; /* Fondo de la página */
+    font-family: Arial, sans-serif;
+}
+
+.h1-bienvenida-centro-de-ayuda {
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 50px;
+    color: #fafafa;
+}
+
+.parrafo-bienvenida-centro-de-ayuda {
+    text-align: center;
+    padding-top: 20px;
+    margin: 15px 125px 50px 125px;
+    color: #fafafa;
+    font-size: 30px;
+}
+
+.h1-text-background {
+    padding-top: 100px;
+    background-color: #273445;
+    padding: 40px;
+}
+
+/* Cajas de Centro de Ayuda */
+
+.container-del-centro-de-ayuda {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.caja-del-centro-de-ayuda {
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 30%;
+    background-color: rgb(54, 54, 54);
+    /* Color de fondo gris */
+    border-top: 5px solid #7fb3d5;
+    /* Borde superior celeste */
+    padding: 25px;
+    box-sizing: border-box;
+    /* Incluye el padding en el tamaño total */
+}
+
+.titulo-caja {
+    text-align: center;
+    color: white;
+}
+
+.descripcion-caja {
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.boton-caja {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6dc58f;
+    /* Color de fondo verde */
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    background: linear-gradient(to top right,
+            #1AAB8A,
+            #7ec8e3,
+            #198bce,
+            #1AAB8A);
+}
+
+.boton-caja:hover {
+    background: linear-gradient(to top right,
+            #198bce,
+            #7ec8e3,
+            #1AAB8A,
+            #198bce);
+    transform: scale(1.05);
+    /* Ajuste del tamaño al hacer hover */
+}
+
+@keyframes boton-caja-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+        /* Ajuste del tamaño en la animación */
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* FAQ */
+
+.faq-container {
+    /* Fondo blanco para el contenido del FAQ */
+    background-color: rgb(0, 0, 0);
+    max-width: 800px;
+    margin: 80px auto; /* Espacio entre los botones y el FAQ */
+    /* Margen alrededor del contenedor */
+    padding: 20px;
+    /* Espacio interior del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra alrededor del contenedor */
+    border-radius: 50px;
+    color: white;
+}
+
+.faq-content {
+    /* Espacio interior del contenido */
+    padding: 20px;
+    height: 350px; /* TAMAÑO DEL HEIGHT DEL FONDO */
+}
+
+.faq-question {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    display: none;
+}
+
+
+.faq-button {
+    background: linear-gradient(
+        to top right,
+        #7ec8e3,
+        #98fb98
+    );
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 15px;
+    transition: transform 0.3s, background 0.3s; /* Transición para la animación */
+}
+
+.faq-button:hover {
+    transform: scale(1.1); /* Escala el botón un 10% */
+    background: linear-gradient(
+        to top right,
+        #98fb98,
+        #7ec8e3
+    );
+}
+
+.faq-line {
+    width: calc(100% - 40px);
+    /* Ancho de la línea */
+    border-bottom: 1px solid #3c4655;
+    position: absolute;
+    margin-top: 5px;
+    left: 1px; /* para que la línea no esté pegada al texto */
+}
+
+#h1-faq-titulo {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+#faq-titulo-div-border {
+    border-bottom: 3px solid black;
+    margin-bottom: 25px;
+}
+
+
+
+/** Sobre nosotros */
+
+/* Titulo h1 */
+.sobre-nosotros-titulo {
+    color: white;
+    margin: 75px 0;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 5px 8px white;
+}
+
+/* Recuadro general Quienes Somos */
+#recuadro-1-sobre {
+    height: 250px;
+    width: 900px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    background-color: rgb(206, 206, 206);
+}
+
+/* Parrafos recuadro general */
+#recuadro-1-sobre p {
+    font-size: 19px;
+}
+
+/* h2 Recuadro general */
+#recuadro-1-sobre h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* Imagen Recuadro general */
+#recuadro-1-sobre img {
+    height: 100%;
+    width: 500px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Recuadro encapsulador mision, vision */
+#recuadro-mision-vision {
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    height: 750px;
+    display: flex;
+}
+
+/* Información del recuadro general */
+#informacion-recuadro-1 {
+    margin: 15px;
+    color: black;
+}
+
+/* Recuadros 2 y 3 */
+#recuadro-2-sobre, #recuadro-3-sobre {
+    height: 600px;
+    width: 350px;
+    border-radius: 20px;
+    background-color: white;
+    transition-duration: 0.4s;
+}
+
+/* Titulos h2 Recuadros 2 y 3 */
+#recuadro-2-sobre h2, #recuadro-3-sobre h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+/* Párrafos Recuadros 2 y 3 */
+#recuadro-2-sobre p, #recuadro-3-sobre p {
+    margin: 0 5px;
+    text-align: justify;
+}
+
+/* Sobrepasar Recuadros 2 y 3 */
+#recuadro-2-sobre:hover, #recuadro-3-sobre:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    box-shadow: 8px 8px 10px rgb(107, 107, 107);
+}
+
+/* Imagenes Recuadros 2 y 3 */
+#recuadro-3-sobre img, #recuadro-2-sobre img {
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+}
+
+/* Margen para separacion del otro recuadro */
+#recuadro-2-sobre {
+    margin-right: 70px;
+}
+
+/* Acomodar Recuadros 2 y 3 uno a la par del otro centrados */
+#recuadros-sobre-nosotros {
+    display: flex;
+    margin: auto auto;
+}
+
+/* Recuadro historia */
+#recuadro-4-sobre {
+    height: 300px;
+    width: 1200px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 75px;
+    display: flex;
+    background-color: #cecece;
+}
+
+/* h2 Recuadro historia */
+#recuadro-4-sobre h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Párrafos recuadro historia */
+#recuadro-4-sobre p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* Imagen recuadro historial */
+#recuadro-4-sobre img {
+    height: 100%;
+    width: 500px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Recuadro contacto */
+
+#recuadro-5-contacto {
+    background-color: #cecece;
+    border-radius: 20px 0;
+    margin-bottom: 55px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
